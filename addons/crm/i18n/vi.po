@@ -2492,7 +2492,7 @@ msgstr "Thẻ"
 #. module: crm
 #: model:ir.ui.menu,name:crm.sales_team_menu_team_pipeline
 msgid "Team Pipelines"
-msgstr "Cơ hôi theo Đội bán hàng"
+msgstr "Cơ hội theo Đội bán hàng"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_res_partner__opportunity_count_ids
