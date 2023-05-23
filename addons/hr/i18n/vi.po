@@ -766,7 +766,7 @@ msgstr "Dựa trên trạng thái người dùng trong hệ thống"
 #. module: hr
 #: model:ir.model,name:hr.model_hr_employee_base
 msgid "Basic Employee"
-msgstr "Người dùng cơ bản"
+msgstr "Nhân viên cơ bản"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_users__can_edit

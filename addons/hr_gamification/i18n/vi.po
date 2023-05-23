@@ -76,7 +76,7 @@ msgstr "Huy hiệu được liên kết trực tiếp đến nhân viên"
 #. module: hr_gamification
 #: model:ir.model,name:hr_gamification.model_hr_employee_base
 msgid "Basic Employee"
-msgstr "Người dùng cơ bản"
+msgstr "Nhân viên cơ bản"
 
 #. module: hr_gamification
 #: model_terms:ir.ui.view,arch_db:hr_gamification.view_badge_wizard_reward

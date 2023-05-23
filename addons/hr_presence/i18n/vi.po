@@ -55,7 +55,7 @@ msgstr "Vắng mặt"
 #. module: hr_presence
 #: model:ir.model,name:hr_presence.model_hr_employee_base
 msgid "Basic Employee"
-msgstr "Người dùng cơ bản"
+msgstr "Nhân viên cơ bản"
 
 #. module: hr_presence
 #: model:ir.model,name:hr_presence.model_res_company
