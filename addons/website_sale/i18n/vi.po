@@ -3672,7 +3672,7 @@ msgid ""
 "You are editing your <b>billing and shipping</b> addresses at the same time!<br/>\n"
 "                                            If you want to modify your shipping address, create a"
 msgstr ""
-"Bạn đang sử đổi địa chỉ <b>hoá đơn và giao hàng</b> cùng lúc!<br/>\n"
+"Bạn đang sửa đổi địa chỉ <b>hoá đơn và giao hàng</b> cùng lúc!<br/>\n"
 "                                            Nếu bạn muốn điều chỉnh địa chỉ giao hàng, hãy tạo một"
 
 #. module: website_sale
