@@ -132,7 +132,7 @@ msgstr "Thẻ"
 #: code:addons/spreadsheet_dashboard_hr_timesheet/data/files/tasks_dashboard.json:0
 #, python-format
 msgid "Tags"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: spreadsheet_dashboard_hr_timesheet
 #. odoo-javascript

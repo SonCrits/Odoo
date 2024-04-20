@@ -3885,7 +3885,7 @@ msgstr "Thẻ"
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.s_dynamic_snippet_products_template_options
 msgid "Tags"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: website_sale
 #: model:ir.model.fields.selection,name:website_sale.selection__website__show_line_subtotals_tax_selection__tax_excluded

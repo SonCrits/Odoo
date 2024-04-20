@@ -564,7 +564,7 @@ msgstr "Tên thẻ đã tồn tại!"
 #: model:ir.model.fields,field_description:utm.field_utm_campaign__tag_ids
 #: model_terms:ir.ui.view,arch_db:utm.view_utm_campaign_view_search
 msgid "Tags"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: utm
 #. odoo-python
