@@ -5196,7 +5196,7 @@ msgstr "LỜI KHUYÊN"
 #: code:addons/web/static/src/views/fields/properties/property_definition.xml:0
 #, python-format
 msgid "Tags"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: web
 #. odoo-javascript

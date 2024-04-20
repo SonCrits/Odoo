@@ -551,7 +551,7 @@ msgstr "Tên từ khóa đã tồn tại!"
 #. module: utm
 #: model:ir.model.fields,field_description:utm.field_utm_campaign__tag_ids
 msgid "Tags"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: utm
 #. odoo-python

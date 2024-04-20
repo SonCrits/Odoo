@@ -126,14 +126,14 @@ msgstr "Dự án"
 #: code:addons/spreadsheet_dashboard_hr_timesheet/data/files/tasks_dashboard.json:0
 #, python-format
 msgid "Tag"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: spreadsheet_dashboard_hr_timesheet
 #. openerp-web
 #: code:addons/spreadsheet_dashboard_hr_timesheet/data/files/tasks_dashboard.json:0
 #, python-format
 msgid "Tags"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: spreadsheet_dashboard_hr_timesheet
 #. openerp-web

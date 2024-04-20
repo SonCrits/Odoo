@@ -133,14 +133,14 @@ msgstr "Doanh thu"
 #: code:addons/spreadsheet_dashboard_event_sale/data/files/events_dashboard.json:0
 #, python-format
 msgid "Tag"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: spreadsheet_dashboard_event_sale
 #. openerp-web
 #: code:addons/spreadsheet_dashboard_event_sale/data/files/events_dashboard.json:0
 #, python-format
 msgid "Tags"
-msgstr "Tag"
+msgstr "Thẻ"
 
 #. module: spreadsheet_dashboard_event_sale
 #. openerp-web
