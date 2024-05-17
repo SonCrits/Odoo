@@ -3621,7 +3621,7 @@ msgstr "Nhiệm vụ đã bị khóa. Ấn để mở khó hoặc chọn như đ
 #. module: project
 #: model:mail.message.subtype,description:project.mt_task_ready
 msgid "Task ready for Next Stage"
-msgstr "Nhiễm vụ sẵn sàng chuyển giai đoạn tiếp"
+msgstr "Nhiệm vụ sẵn sàng chuyển giai đoạn tiếp"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.act_project_project_2_project_task_all
