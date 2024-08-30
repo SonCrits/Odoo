@@ -1613,7 +1613,7 @@ msgstr "Công tơ mét"
 #. module: fleet
 #: model:res.groups,name:fleet.fleet_group_user
 msgid "Officer : Manage all vehicles"
-msgstr ""
+msgstr "Cán bộ: Quản lý tất cả phương tiện"
 
 #. module: fleet
 #: model:fleet.service.type,name:fleet.type_service_31
