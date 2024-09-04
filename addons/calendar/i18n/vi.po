@@ -1635,7 +1635,7 @@ msgstr "Mãi mãi"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__byday__4
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__byday__4
 msgid "Fourth"
-msgstr "Tuần Thứ tư"
+msgstr "Tuần thứ tư"
 
 #. module: calendar
 #: model_terms:ir.ui.view,arch_db:calendar.view_calendar_event_search
@@ -2511,7 +2511,7 @@ msgstr "Những sự kiện này không có người tham dự"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__byday__3
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__byday__3
 msgid "Third"
-msgstr "Tuần Thứ ba"
+msgstr "Tuần thứ ba"
 
 #. module: calendar
 #. odoo-javascript
