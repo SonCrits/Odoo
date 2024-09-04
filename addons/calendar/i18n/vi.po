@@ -1282,13 +1282,13 @@ msgstr "Ngày"
 #. module: calendar
 #: model_terms:ir.ui.view,arch_db:calendar.view_calendar_event_form
 msgid "Day of Month"
-msgstr "Ngày trong Tháng"
+msgstr "Thứ trong Tháng"
 
 #. module: calendar
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__month_by__day
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__month_by__day
 msgid "Day of month"
-msgstr "Ngày trong tháng"
+msgstr "Thứ trong tháng"
 
 #. module: calendar
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_alarm__interval__days
@@ -1601,7 +1601,7 @@ msgstr "Phản hồi: %(feedback)s"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__byday__1
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__byday__1
 msgid "First"
-msgstr "Thứ nhất"
+msgstr "Tuần đầu tiên"
 
 #. module: calendar
 #. odoo-python
@@ -1635,7 +1635,7 @@ msgstr "Mãi mãi"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__byday__4
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__byday__4
 msgid "Fourth"
-msgstr "Thứ tư"
+msgstr "Tuần Thứ tư"
 
 #. module: calendar
 #: model_terms:ir.ui.view,arch_db:calendar.view_calendar_event_search
@@ -1807,7 +1807,7 @@ msgstr "Tham gia Cuộc gọi Video"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__byday__-1
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__byday__-1
 msgid "Last"
-msgstr "Gần nhất"
+msgstr "Tuần cuối cùng"
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_alarm____last_update
@@ -2299,7 +2299,7 @@ msgstr "Tìm kiếm Cuộc gặp"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__byday__2
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__byday__2
 msgid "Second"
-msgstr "Thứ hai"
+msgstr "Tuần thứ hai"
 
 #. module: calendar
 #: model_terms:ir.ui.view,arch_db:calendar.view_calendar_event_form
@@ -2511,7 +2511,7 @@ msgstr "Những sự kiện này không có người tham dự"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__byday__3
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__byday__3
 msgid "Third"
-msgstr "Thứ 3"
+msgstr "Tuần Thứ ba"
 
 #. module: calendar
 #. odoo-javascript
