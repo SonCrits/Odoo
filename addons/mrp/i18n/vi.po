@@ -4198,6 +4198,11 @@ msgid ""
 "            operations will have different impacts on the costs of\n"
 "            manufacturing and planning depending on the available workload."
 msgstr ""
+"Để sản xuất hoặc lắp ráp sản phẩm, sử dụng các linh kiện và\n"
+"            sản phẩm hoàn chỉnh, bạn cũng phải quản lý các hoạt động sản xuất.\n"
+"            Các hoạt động sản xuất thường được gọi là Lệnh Sản Xuất. Các hoạt động\n"
+"            khác nhau sẽ có những ảnh hưởng khác nhau đến chi phí\n"
+"            sản xuất và kế hoạch tùy thuộc vào khối lượng công việc hiện có."
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_unbuild_search_view
@@ -4989,7 +4994,7 @@ msgstr "Bạn không thể dịch chuyển một Lệnh sản xuất đã lập 
 #: code:addons/mrp/models/mrp_production.py:0
 #, python-format
 msgid "You cannot produce a MO with a bom kit product."
-msgstr ""
+msgstr "Bạn không thể sản xuất một Đơn Sản Xuất (MO) với sản phẩm thuộc bộ BOM kit"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_abstract_workorder.py:0
@@ -5032,6 +5037,8 @@ msgid ""
 "You must indicate a non-zero amount consumed for at least one of your "
 "components"
 msgstr ""
+"Bạn phải chỉ định một lượng tiêu thụ khác 0 cho ít nhất một trong các "
+"linh kiện của bạn."
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_workorder.py:0
