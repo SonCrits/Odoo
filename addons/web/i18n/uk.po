@@ -4571,7 +4571,7 @@ msgstr "Час очікування запиту минув"
 #: code:addons/web/static/src/core/domain_selector/domain_selector.xml:0
 #, python-format
 msgid "Reset domain"
-msgstr ""
+msgstr "Скинути домен"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.view_base_document_layout
@@ -4890,6 +4890,13 @@ msgstr "Вибрати все"
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/legacy/xml/base.xml:0
+#, python-format
+msgid "Select all records matching the search"
+msgstr ""
+
+#. module: web
+#. openerp-web
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/views/view_dialogs/export_data_dialog.xml:0
 #, python-format
@@ -5280,7 +5287,7 @@ msgstr ""
 #: code:addons/web/static/src/core/utils/files.js:0
 #, python-format
 msgid "The selected file (%sB) is over the maximum allowed file size (%sB)."
-msgstr ""
+msgstr "Обраний файл (%sB) більше дозволеного розміру файлу (%sB)."
 
 #. module: web
 #. odoo-javascript
@@ -5913,6 +5920,7 @@ msgstr "Перемикач перегляду"
 #: code:addons/web/static/src/legacy/js/views/list/list_controller.js:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/legacy/xml/control_panel.xml:0
 #: code:addons/web/static/src/search/favorite_menu/favorite_menu.js:0
 #: code:addons/web/static/src/views/fields/domain/domain_field.xml:0
 #: code:addons/web/static/src/views/fields/domain/domain_field.xml:0
@@ -6838,4 +6846,4 @@ msgstr "— натисніть"
 #: code:addons/web/static/src/core/commands/command_items.xml:0
 #, python-format
 msgid "— search for"
-msgstr ""
+msgstr "— пошук"

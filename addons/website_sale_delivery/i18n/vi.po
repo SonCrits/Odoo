@@ -6,14 +6,15 @@
 # Martin Trigaux, 2022
 # Thang Nguyen, 2023
 # Thi Huong Nguyen, 2023
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.5alpha1\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 09:02+0000\n"
+"POT-Creation-Date: 2024-02-06 13:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:57+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2023\n"
+"Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,6 +39,7 @@ msgstr ""
 " điều chỉnh giảm"
 
 #. module: website_sale_delivery
+#. odoo-python
 #: code:addons/website_sale_delivery/controllers/main.py:0
 #: code:addons/website_sale_delivery/controllers/main.py:0
 #, python-format
@@ -47,7 +49,7 @@ msgstr "Đối tác thanh toán nhanh ẩn danh cho đơn hàng %s"
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier__can_publish
 msgid "Can Publish"
-msgstr "Có thể đăng"
+msgstr "Có thế xuất bản"
 
 #. module: website_sale_delivery
 #: model_terms:ir.ui.view,arch_db:website_sale_delivery.payment_delivery
@@ -67,7 +69,7 @@ msgstr "Phương thức giao hàng DHL"
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_sale_order__amount_delivery
 msgid "Delivery Amount"
-msgstr "Giá trị Bàn giao"
+msgstr "Giá trị bàn giao"
 
 #. module: website_sale_delivery
 #: model_terms:ir.ui.view,arch_db:website_sale_delivery.cart_delivery
@@ -88,7 +90,7 @@ msgstr "Mô tả được hiển thị ở eCommerce và các báo giá trực t
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier__website_description
 msgid "Description for Online Quotations"
-msgstr "Mô tả cho Báo giá Trực tuyến"
+msgstr "Mô tả cho báo giá trực tuyến"
 
 #. module: website_sale_delivery
 #: model_terms:ir.ui.view,arch_db:website_sale_delivery.res_config_settings_view_form
@@ -101,7 +103,7 @@ msgid "FedEx Shipping Methods"
 msgstr "Phương thức giao hàng FedEx"
 
 #. module: website_sale_delivery
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_sale_delivery/static/src/js/website_sale_delivery.js:0
 #, python-format
 msgid "Free"
@@ -113,6 +115,7 @@ msgid "Is Published"
 msgstr "Được đăng"
 
 #. module: website_sale_delivery
+#. odoo-python
 #: code:addons/website_sale_delivery/controllers/main.py:0
 #, python-format
 msgid ""
@@ -123,6 +126,7 @@ msgstr ""
 "làm mới lại trang và thử lại."
 
 #. module: website_sale_delivery
+#. odoo-python
 #: code:addons/website_sale_delivery/controllers/main.py:0
 #, python-format
 msgid ""
@@ -133,6 +137,7 @@ msgstr ""
 "phương thức giao hàng"
 
 #. module: website_sale_delivery
+#. odoo-python
 #: code:addons/website_sale_delivery/controllers/main.py:0
 #, python-format
 msgid ""
@@ -141,6 +146,12 @@ msgid ""
 msgstr ""
 "Chưa có phương thức vận chuyển khả dụng cho đơn hiện hành và địa chỉ bàn "
 "giao của bạn. Vui lòng liên hệ với chúng tôi để biết thêm thông tin."
+
+#. module: website_sale_delivery
+#: code:addons/website_sale_delivery/controllers/main.py:0
+#, python-format
+msgid "No shipping method is selected."
+msgstr "Chưa chọn phương thức vận chuyển nào."
 
 #. module: website_sale_delivery
 #: model_terms:ir.ui.view,arch_db:website_sale_delivery.view_delivery_carrier_search_inherit_website_sale_delivery
@@ -175,6 +186,7 @@ msgid "Shipping Methods"
 msgstr "Phương thức giao hàng"
 
 #. module: website_sale_delivery
+#. odoo-python
 #: code:addons/website_sale_delivery/controllers/main.py:0
 #, python-format
 msgid "Sorry, we are unable to ship your order"

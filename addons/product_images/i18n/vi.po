@@ -8,9 +8,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.5alpha1\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 09:02+0000\n"
+"POT-Creation-Date: 2024-02-06 13:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
@@ -21,13 +21,14 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #, python-format
 msgid ""
 "%(matching_images_count)s matching images have been found for "
 "%(product_count)s products."
 msgstr ""
-"%(matching_images_count)s hình ảnh trùng khớp được tìm thấy cho "
+"%(matching_images_count)s hình ảnh trùng lặp được tìm thấy cho "
 "%(product_count)s sản phẩm."
 
 #. module: product_images
@@ -44,6 +45,7 @@ msgstr ""
 "                        </span>"
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #, python-format
 msgid ""
@@ -65,7 +67,7 @@ msgstr "Hủy"
 #. module: product_images
 #: model:ir.model,name:product_images.model_res_config_settings
 msgid "Config Settings"
-msgstr "Thiết lập Cấu hình"
+msgstr "Thiết lập cấu hình"
 
 #. module: product_images
 #: model:ir.model.fields,field_description:product_images.field_product_fetch_image_wizard__create_uid
@@ -75,7 +77,7 @@ msgstr "Tạo bởi"
 #. module: product_images
 #: model:ir.model.fields,field_description:product_images.field_product_fetch_image_wizard__create_date
 msgid "Created on"
-msgstr "Thời điểm tạo"
+msgstr "Tạo vào"
 
 #. module: product_images
 #: model:ir.model.fields,field_description:product_images.field_product_fetch_image_wizard__display_name
@@ -88,7 +90,7 @@ msgid ""
 "Fetch product images from Google Images based on the product's barcode "
 "number."
 msgstr ""
-"Tìm nạp hình ảnh sản phẩm từ Google Hình ảnh dựa trên số mã vạch của sản "
+"Tìm nạp hình ảnh sản phẩm từ Google hình ảnh dựa trên số mã vạch của sản "
 "phẩm."
 
 #. module: product_images
@@ -100,7 +102,7 @@ msgstr "Lấy hình ảnh"
 #: model:ir.actions.act_window,name:product_images.product_product_action_get_pic_with_barcode
 #: model:ir.actions.act_window,name:product_images.product_template_action_get_pic_with_barcode
 msgid "Get Pictures from Google Images"
-msgstr "Lấy hình ảnh từ Google Hình ảnh"
+msgstr "Lấy hình ảnh từ Google hình ảnh"
 
 #. module: product_images
 #: model:ir.model.fields,field_description:product_images.field_res_config_settings__google_custom_search_key
@@ -159,9 +161,8 @@ msgstr ""
 #. module: product_images
 #: model:ir.actions.server,name:product_images.ir_cron_fetch_image_ir_actions_server
 #: model:ir.cron,cron_name:product_images.ir_cron_fetch_image
-#: model:ir.cron,name:product_images.ir_cron_fetch_image
 msgid "Product Images: Get product images from Google"
-msgstr "Hình ảnh sản phẩm: Lấy hình ảnh sản phẩm từ Google"
+msgstr "Hình ảnh sản phẩm: lấy hình ảnh sản phẩm từ Google"
 
 #. module: product_images
 #: model:ir.model,name:product_images.model_product_product
@@ -169,6 +170,7 @@ msgid "Product Variant"
 msgstr "Biến thể sản phẩm"
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #, python-format
 msgid "Product images"
@@ -180,6 +182,7 @@ msgid "Products To Process"
 msgstr "Sản phẩm cần xử lý"
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #, python-format
 msgid ""
@@ -194,6 +197,7 @@ msgid "Search Engine ID"
 msgstr "ID công cụ tìm kiếm"
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #, python-format
 msgid "The API Key and Search Engine ID must be set in the General Settings."
@@ -201,6 +205,7 @@ msgstr ""
 "Khoá API và ID công cụ tìm kiếm phải được cài đặt trong phần Cài đặt chung."
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #, python-format
 msgid ""
@@ -215,7 +220,7 @@ msgstr ""
 #. module: product_images
 #: model:ir.model.fields,field_description:product_images.field_res_config_settings__google_pse_id
 msgid "The identifier of the Google Programmable Search Engine"
-msgstr "Mã định danh của Công cụ tìm kiếm có thể lập trình của Google"
+msgstr "Mã định danh của công cụ tìm kiếm có thể lập trình của Google"
 
 #. module: product_images
 #: model:ir.model.fields,help:product_images.field_product_fetch_image_wizard__products_to_process
@@ -227,6 +232,7 @@ msgstr ""
 "ảnh)"
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #, python-format
@@ -240,10 +246,11 @@ msgstr ""
 "động hoặc cài đặt lại phân hệ \"product_images\"."
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/models/ir_cron_trigger.py:0
 #, python-format
 msgid "This action is already scheduled. Please try again later."
-msgstr "Hành động này đã được lên lịch. Vui lòng thử lại sau. "
+msgstr "Hành động này đã được lên lịch. Vui lòng thử lại sau."
 
 #. module: product_images
 #: model:ir.model,name:product_images.model_ir_cron_trigger
@@ -263,6 +270,7 @@ msgid "You selected"
 msgstr "Bạn đã chọn"
 
 #. module: product_images
+#. odoo-python
 #: code:addons/product_images/wizard/product_fetch_image_wizard.py:0
 #, python-format
 msgid "Your API Key or your Search Engine ID is incorrect."

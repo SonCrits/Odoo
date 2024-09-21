@@ -17,7 +17,7 @@ from odoo.exceptions import ValidationError
 from odoo.osv import expression
 from odoo.tools.float_utils import float_round
 
-from odoo.tools import date_utils, float_utils
+from odoo.tools import date_utils
 from .resource_mixin import timezone_datetime
 
 # Default hour per day value. The one should
@@ -325,7 +325,7 @@ class ResourceCalendar(models.Model):
             ]
 
             self.two_weeks_calendar = True
-            default_attendance = self.default_get('attendance_ids')['attendance_ids']
+            default_attendance = self.default_get(['attendance_ids'])['attendance_ids']
             for idx, att in enumerate(default_attendance):
                 att[2]["week_type"] = '0'
                 att[2]["sequence"] = idx + 1
@@ -337,7 +337,7 @@ class ResourceCalendar(models.Model):
         else:
             self.two_weeks_calendar = False
             self.attendance_ids.unlink()
-            self.attendance_ids = self.default_get('attendance_ids')['attendance_ids']
+            self.attendance_ids = self.default_get(['attendance_ids'])['attendance_ids']
         self._onchange_hours_per_day()
 
     @api.onchange('attendance_ids')
@@ -596,11 +596,11 @@ class ResourceCalendar(models.Model):
         for start, stop, meta in intervals:
             day_hours[start.date()] += (stop - start).total_seconds() / 3600
 
-        # compute number of days as quarters
-        days = sum(
-            float_utils.round(ROUNDING_FACTOR * day_hours[day] / day_total[day]) / ROUNDING_FACTOR if day_total[day] else 0
+        # compute number of days the hours span over
+        days = float_round(sum(
+            day_hours[day] / day_total[day] if day_total[day] else 0
             for day in day_hours
-        )
+        ), precision_rounding=0.001)
         return {
             'days': days,
             'hours': sum(day_hours.values()),

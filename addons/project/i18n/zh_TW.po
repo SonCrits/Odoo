@@ -5,6 +5,7 @@
 # Translators:
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2023
 # Martin Trigaux, 2024
+# Wil Odoo, 2024
 # Tony Ng, 2024
 # 
 msgid ""
@@ -635,12 +636,12 @@ msgstr "<span class=\"o_stat_text\">上次評分</span>"
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_form2
 msgid "<span class=\"o_stat_text\">Sub-tasks</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">子任務</span>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_milestone_view_form
 msgid "<span class=\"o_stat_text\">Tasks</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">任務</span>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_form2
@@ -1248,7 +1249,7 @@ msgstr "平均評分：滿意"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Backlog"
-msgstr "未完成的"
+msgstr "積壓工作"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__analytic_account_balance
@@ -4265,7 +4266,7 @@ msgstr "專案"
 #: model_terms:ir.actions.act_window,help:project.open_view_project_all_group_stage
 msgid ""
 "Projects contain tasks on the same topic, and each has its own dashboard."
-msgstr "專案包含相同主題的任務，每個專案都有自己的概覽畫面。"
+msgstr "專案包含相同主題的任務，每個專案都有自己的Dashboard。"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task_type__project_ids
