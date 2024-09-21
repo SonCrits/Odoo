@@ -3720,7 +3720,7 @@ class AccountMove(models.Model):
             button_access = {'url': access_link} if access_link else {}
             recipient_group = (
                 'additional_intended_recipient',
-                lambda pdata: pdata['id'] in msg_vals.get('partner_ids', []) and pdata['id'] != self.partner_id.id,
+                lambda pdata: pdata['id'] in msg_vals.get('partner_ids', []) and pdata['id'] != self.partner_id.id and pdata['type'] != 'user',
                 {
                     'has_button_access': True,
                     'button_access': button_access,
@@ -3760,7 +3760,7 @@ class AccountMoveLine(models.Model):
         help='Utility field to express amount currency')
     account_id = fields.Many2one('account.account', string='Account',
         index=True, ondelete="cascade",
-        domain="[('deprecated', '=', False), ('company_id', '=', 'company_id'),('is_off_balance', '=', False)]",
+        domain="[('deprecated', '=', False), ('company_id', '=', company_id),('is_off_balance', '=', False)]",
         check_company=True,
         tracking=True)
     account_internal_type = fields.Selection(related='account_id.user_type_id.type', string="Internal Type", readonly=True)
@@ -4053,9 +4053,10 @@ class AccountMoveLine(models.Model):
 
     def _get_computed_uom(self):
         self.ensure_one()
-        if self.product_id:
+        if self.move_id.is_purchase_document():
+            return self.product_id.uom_po_id
+        else:
             return self.product_id.uom_id
-        return False
 
     def _set_price_and_tax_after_fpos(self):
         self.ensure_one()

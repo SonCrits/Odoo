@@ -5,20 +5,21 @@
 # Translators:
 # Martin Trigaux, 2021
 # fanha99 <fanha99@hotmail.com>, 2021
-# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2021
+# Nancy Momoland <thanh.np2502@gmail.com>, 2021
 # Duy BQ <duybq86@gmail.com>, 2021
 # Trinh Tran Thi Phuong <trinhttp@trobz.com>, 2021
 # Dung Nguyen Thi <dungnt@trobz.com>, 2021
 # Dao Nguyen <trucdao.uel@gmail.com>, 2021
 # Vo Thanh Thuy, 2022
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 10:28+0000\n"
+"POT-Creation-Date: 2024-08-14 15:43+0000\n"
 "PO-Revision-Date: 2021-09-14 12:21+0000\n"
-"Last-Translator: Vo Thanh Thuy, 2022\n"
+"Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +49,7 @@ msgstr "%s%% chiết khấu trên sản phẩm rẻ nhất"
 #: code:addons/coupon/models/coupon_reward.py:0
 #, python-format
 msgid "%s%% discount on products"
-msgstr "%s%% chiết khâu sản phẩm"
+msgstr "%s%% chiết khấu sản phẩm"
 
 #. module: coupon
 #: code:addons/coupon/models/coupon_reward.py:0
@@ -416,7 +417,7 @@ msgstr "Tạo bởi"
 #: model:ir.model.fields,field_description:coupon.field_coupon_reward__create_date
 #: model:ir.model.fields,field_description:coupon.field_coupon_rule__create_date
 msgid "Created on"
-msgstr "Thời điểm tạo"
+msgstr "Tạo vào"
 
 #. module: coupon
 #: model:ir.model.fields,field_description:coupon.field_coupon_program__currency_id
@@ -439,7 +440,7 @@ msgstr "Đơn vị tình mặc định dùng cho tất cả hoạt động kho."
 #: model:ir.model.fields,field_description:coupon.field_coupon_reward__discount_percentage
 #: model:ir.model.fields.selection,name:coupon.selection__coupon_reward__reward_type__discount
 msgid "Discount"
-msgstr "Chiết khấu/Giảm giá"
+msgstr "Chiết khấu/giảm giá"
 
 #. module: coupon
 #: model:ir.model.fields,help:coupon.field_coupon_program__reward_type
@@ -457,7 +458,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:coupon.field_coupon_program__discount_apply_on
 #: model:ir.model.fields,field_description:coupon.field_coupon_reward__discount_apply_on
 msgid "Discount Apply On"
-msgstr "Giảm giá áp dụng vào"
+msgstr "Chiết khấu áp dụng vào"
 
 #. module: coupon
 #: model:ir.model.fields,field_description:coupon.field_coupon_program__discount_max_amount
@@ -612,7 +613,7 @@ msgstr "Đối tác không hợp lệ."
 #: model:ir.model.fields,field_description:coupon.field_coupon_reward____last_update
 #: model:ir.model.fields,field_description:coupon.field_coupon_rule____last_update
 msgid "Last Modified on"
-msgstr "Sửa lần cuối"
+msgstr "Sửa lần cuối vào"
 
 #. module: coupon
 #: model:ir.model.fields,field_description:coupon.field_coupon_coupon__write_uid
@@ -630,7 +631,7 @@ msgstr "Cập nhật lần cuối bởi"
 #: model:ir.model.fields,field_description:coupon.field_coupon_reward__write_date
 #: model:ir.model.fields,field_description:coupon.field_coupon_rule__write_date
 msgid "Last Updated on"
-msgstr "Cập nhật lần cuối"
+msgstr "Cập nhật lần cuối vào"
 
 #. module: coupon
 #: model_terms:ir.ui.view,arch_db:coupon.report_coupon
@@ -771,6 +772,11 @@ msgid ""
 msgstr ""
 "Phần trăm - Phần trăm chiết khấu đã nhập sẽ được cung cấp\n"
 "Số tiền - Số tiền giảm giá cố định đã nhập sẽ được cung cấp"
+
+#. module: coupon
+#: model:ir.model,name:coupon.model_product_product
+msgid "Product"
+msgstr "Sản phẩm"
 
 #. module: coupon
 #: model:ir.model.fields,help:coupon.field_coupon_coupon__discount_line_product_id
@@ -943,7 +949,7 @@ msgstr "Gửi phiếu giảm giá"
 #. module: coupon
 #: model_terms:ir.ui.view,arch_db:coupon.coupon_view_form
 msgid "Send by Email"
-msgstr "Gửi qua Email"
+msgstr "Gửi qua email"
 
 #. module: coupon
 #: model:ir.model.fields.selection,name:coupon.selection__coupon_coupon__state__sent
@@ -1025,10 +1031,9 @@ msgid "The program code must be unique!"
 msgstr "Mã chương trình phải là duy nhất!"
 
 #. module: coupon
-#: code:addons/coupon/models/coupon_rules.py:0
-#, python-format
-msgid "The start date must be before the end date"
-msgstr "Ngày bắt đầu phải trước ngày kết thúc"
+#: model:ir.model.constraint,message:coupon.constraint_coupon_rule_check_coupon_rule_dates
+msgid "The start date must be before the end date!"
+msgstr ""
 
 #. module: coupon
 #: code:addons/coupon/models/coupon.py:0

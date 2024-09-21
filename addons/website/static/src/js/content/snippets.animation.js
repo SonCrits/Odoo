@@ -455,7 +455,8 @@ registry.slider = publicWidget.Widget.extend({
 
         // Only for carousels having the `Carousel` and `CarouselItem` options
         // (i.e. matching the `section > .carousel` selector).
-        if (this.editableMode && this.el.matches("section > .carousel")) {
+        if (this.editableMode && this.el.matches("section > .carousel")
+                && !this.options.wysiwyg.options.enableTranslation) {
             this.controlEls = this.el.querySelectorAll(".carousel-control-prev, .carousel-control-next");
             const indicatorEls = this.el.querySelectorAll(".carousel-indicators > li");
             // Deactivate the carousel controls to handle the slides manually in
@@ -489,7 +490,8 @@ registry.slider = publicWidget.Widget.extend({
         $(window).off('.slider');
         this.$target.off('.slider'); // TODO remove in master
 
-        if (this.editableMode && this.el.matches("section > .carousel")) {
+        if (this.editableMode && this.el.matches("section > .carousel")
+                && !this.options.wysiwyg.options.enableTranslation) {
             // Restore the carousel controls.
             const indicatorEls = this.el.querySelectorAll(".carousel-indicators > li");
             this.options.wysiwyg.odooEditor.observerUnactive("restore_controls");
@@ -1065,8 +1067,13 @@ registry.anchorSlide = publicWidget.Widget.extend({
      * @private
      */
     _onAnimateClick: function (ev) {
-        if (this.$target[0].pathname !== window.location.pathname) {
+        const ensureSlash = path => path.endsWith("/") ? path : path + "/";
+        if (ensureSlash(this.$target[0].pathname) !== ensureSlash(window.location.pathname)) {
             return;
+        }
+        // Avoid flicker at destination in case of ending "/" difference.
+        if (this.$target[0].pathname !== window.location.pathname) {
+            this.$target[0].pathname = window.location.pathname;
         }
         var hash = this.$target[0].hash;
         if (hash === '#top' || hash === '#bottom') {

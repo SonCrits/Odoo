@@ -19,20 +19,20 @@
 # Michal Veselý <michal@veselyberanek.net>, 2022
 # Petr Hemza, 2023
 # Rastislav Brencic <rastislav.brencic@azet.sk>, 2023
-# Jiří Podhorecký, 2023
 # karolína schusterová <karolina.schusterova@vdp.sk>, 2023
 # Tomáš Píšek, 2023
-# Aleš Fiala <f.ales1@seznam.cz>, 2024
 # Katerina Horylova, 2024
+# Aleš Fiala <f.ales1@seznam.cz>, 2024
 # Wil Odoo, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-18 09:52+0000\n"
+"POT-Creation-Date: 2024-08-14 15:42+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
+"Last-Translator: Jiří Podhorecký <jirka.p@volny.cz>, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/odoo/teams/41243/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -113,6 +113,12 @@ msgstr "%<span class=\"px-3\"/>("
 #, python-format
 msgid "%d moves"
 msgstr "%d pohyby"
+
+#. module: account
+#: code:addons/account/models/account_account_tag.py:0
+#, python-format
+msgid "%s (%s)"
+msgstr "%s (%s)"
 
 #. module: account
 #: code:addons/account/models/account_tax.py:0
@@ -257,6 +263,8 @@ msgid ""
 "<br/>\n"
 "                            on this account:"
 msgstr ""
+"<br/>\n"
+"                            na tomto účtu:"
 
 #. module: account
 #: model:mail.template,body_html:account.email_template_edi_credit_note
@@ -1094,11 +1102,6 @@ msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "<strong>Amount Due</strong>"
-msgstr "<strong>Splatná částka</strong>"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
 msgid "<strong>Credit Note Date:</strong>"
 msgstr "<strong>Datum dobropisu:</strong>"
 
@@ -1321,17 +1324,6 @@ msgstr "V cílovém deníku se automaticky vytvoří druhá platba."
 #: model:ir.model.constraint,message:account.constraint_account_fiscal_position_tax_tax_src_dest_uniq
 msgid "A tax fiscal position could be defined only one time on same taxes."
 msgstr "Daňovou fiskální pozici lze definovat pouze jednou na stejné daně."
-
-#. module: account
-#: code:addons/account/models/account_tax.py:0
-#, python-format
-msgid ""
-"A tax should only use tags from its country. You should use another tax and "
-"a fiscal position if you wish to uses the tags from foreign tax reports."
-msgstr ""
-"Daň by měla používat pouze značky ze své země. Pokud chcete používat značky "
-"ze zahraničních daňových výkazů, měli byste použít jinou daň a fiskální "
-"pozici."
 
 #. module: account
 #: code:addons/account/models/res_users.py:0
@@ -2728,16 +2720,6 @@ msgid "Associated Account Templates"
 msgstr "Přidružené šablony účtu"
 
 #. module: account
-#: code:addons/account/populate/res_company.py:0
-#, python-format
-msgid ""
-"At least one localization is needed to be installed in order to populate the"
-" database with accounting"
-msgstr ""
-"K naplnění databáze účetnictvím je třeba nainstalovat alespoň jednu "
-"lokalizaci"
-
-#. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_invoice_send_wizard_form
 #: model_terms:ir.ui.view,arch_db:account.account_tour_upload_bill
 msgid "Attach a file"
@@ -2914,7 +2896,7 @@ msgstr "Banka"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Bank &amp; Cash"
-msgstr "Banka & amp; hotovost"
+msgstr "Banka &amp; hotovost"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__bank_account_id
@@ -3988,6 +3970,7 @@ msgstr "Společnosti, které odkazují na partnera"
 #: model:ir.model.fields,field_description:account.field_account_tax_carryover_line__company_id
 #: model:ir.model.fields,field_description:account.field_account_tax_repartition_line__company_id
 #: model_terms:ir.ui.view,arch_db:account.view_account_analytic_default_form_search
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_search
@@ -4970,6 +4953,7 @@ msgstr "Kontrola konzistence dat"
 #: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard__date
 #: model:ir.model.fields.selection,name:account.selection__account_print_journal__sort_selection__date
 #: model_terms:ir.ui.view,arch_db:account.report_journal
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
@@ -5214,7 +5198,7 @@ msgstr "Definujte nejmenší ražení mincí používaných k platbě v hotovost
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.onboarding_fiscal_year_step
 msgid "Define your fiscal years &amp; tax returns periodicity."
-msgstr "Definujte své fiskální roky & amp; periodicita daňových přiznání."
+msgstr "Definujte své fiskální roky &amp; periodicita daňových přiznání."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__bank_statements_source
@@ -5272,6 +5256,26 @@ msgstr "Smazat emaily"
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__auto_delete_message
 msgid "Delete Message Copy"
 msgstr "Odstranit kopii zprávy"
+
+#. module: account
+#: model:account.account.tag,name:account.demo_ceo_wages_account
+msgid "Demo CEO Wages Account"
+msgstr "Demo účet výplat CEO"
+
+#. module: account
+#: model:account.account.tag,name:account.demo_capital_account
+msgid "Demo Capital Account"
+msgstr "Demo kapitálový účet"
+
+#. module: account
+#: model:account.account.tag,name:account.demo_sale_of_land_account
+msgid "Demo Sale of Land Account"
+msgstr "Demo účet prodeje pozemku"
+
+#. module: account
+#: model:account.account.tag,name:account.demo_stock_account
+msgid "Demo Stock Account"
+msgstr "Demo účet zásob"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__deprecated
@@ -6068,6 +6072,11 @@ msgstr "Finanční účetnictví"
 #: model:ir.model.fields,field_description:account.field_account_tax_repartition_line_template__tag_ids
 msgid "Financial Tags"
 msgstr "Finanční tagy"
+
+#. module: account
+#: model:account.account.tag,name:account.account_tag_financing
+msgid "Financing Activities"
+msgstr "Finanční aktivity"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_partner_mapping__payment_ref_regex
@@ -7285,6 +7294,8 @@ msgid ""
 "Invalid \"Zip Range\", You have to configure both \"From\" and \"To\" values"
 " for the zip range and \"To\" should be greater than \"From\"."
 msgstr ""
+"Neplatný \"Rozsah PSČ\", Musíte nakonfigurovat hodnoty \"Od\" i \"Do\" pro "
+"rozsah PSČ a \"Do\" by mělo být větší než \"Od\"."
 
 #. module: account
 #: code:addons/account/models/company.py:0
@@ -7296,6 +7307,11 @@ msgstr "Neplatný poslední den fiskálního roku"
 #: model:ir.model.fields,field_description:account.field_account_move_line__tax_tag_invert
 msgid "Invert Tags"
 msgstr "Invertovat tagy"
+
+#. module: account
+#: model:account.account.tag,name:account.account_tag_investing
+msgid "Investing & Extraordinary Activities"
+msgstr "Investiční a výjimečné aktivity"
 
 #. module: account
 #: code:addons/account/models/account_move.py:0
@@ -7751,6 +7767,7 @@ msgstr "Leden"
 #: model_terms:ir.ui.view,arch_db:account.report_hash_integrity
 #: model_terms:ir.ui.view,arch_db:account.report_journal
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_journal_search
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
@@ -8975,6 +8992,12 @@ msgid "Negative value of amount field if payment_type is outbound"
 msgstr "Záporná hodnota pole částka, pokud je payment_type odchozí"
 
 #. module: account
+#: code:addons/account/models/account_tax.py:0
+#, python-format
+msgid "Nested group of taxes are not allowed."
+msgstr "Vnořené skupiny daní nejsou povoleny."
+
+#. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_bank_statement__state__open
 #: model_terms:ir.ui.view,arch_db:account.view_bank_statement_search
 msgid "New"
@@ -9400,6 +9423,11 @@ msgid "Off-Balance Sheet"
 msgstr "Podrozvaha"
 
 #. module: account
+#: model:account.account.tag,name:account.demo_office_furniture_account
+msgid "Office Furniture"
+msgstr "Kancelářský nábytek"
+
+#. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_reconcile_model__matching_order__old_first
 #: model:ir.model.fields.selection,name:account.selection__account_reconcile_model_template__matching_order__old_first
 msgid "Oldest first"
@@ -9597,6 +9625,11 @@ msgstr "Otevírací hodnota kreditu pro tento účet."
 #: model:ir.model.fields,help:account.field_account_account__opening_debit
 msgid "Opening debit value for this account."
 msgstr "Otevírací hodnota debetu pro tento účet."
+
+#. module: account
+#: model:account.account.tag,name:account.account_tag_operating
+msgid "Operating Activities"
+msgstr "Provozní aktivity"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form
@@ -9953,6 +9986,7 @@ msgstr "Částečně zaplaceno"
 #: model_terms:ir.ui.view,arch_db:account.report_journal
 #: model_terms:ir.ui.view,arch_db:account.view_account_analytic_default_form_search
 #: model_terms:ir.ui.view,arch_db:account.view_account_analytic_line_filter_inherit_account
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
@@ -13067,7 +13101,7 @@ msgid ""
 "Taxes, fiscal positions, chart of accounts &amp; legal statements for your "
 "country"
 msgstr ""
-"Daně, mapování daní, účtová osnova & amp; právní prohlášení pro vaši zemi"
+"Daně, mapování daní, účtová osnova &amp; právní prohlášení pro vaši zemi"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_invoice_send__move_types
@@ -13774,6 +13808,14 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__company_id
 msgid "The company this distribution line belongs to."
 msgstr "Společnost, které tato distribuční linka patří."
+
+#. module: account
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
+"The country code of the foreign VAT number does not match any country in the"
+" group."
+msgstr "Kód země zahraničního DIČ neodpovídá žádné zemi ve skupině."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id
@@ -15160,7 +15202,7 @@ msgstr "Celkem transakčních řádků."
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Track costs &amp; revenues by project, department, etc"
-msgstr "Sledovat náklady & amp; výnosy podle projektu, oddělení atd"
+msgstr "Sledovat náklady &amp; výnosy podle projektu, oddělení atd"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__transaction_type
@@ -16205,7 +16247,7 @@ msgstr ""
 msgid ""
 "You can't register payments for both inbound and outbound moves at the same "
 "time."
-msgstr ""
+msgstr "Nemůžete registrovat platby za příchozí i odchozí přesuny současně."
 
 #. module: account
 #: code:addons/account/models/account_analytic_line.py:0
@@ -16268,6 +16310,14 @@ msgstr ""
 #: code:addons/account/models/partner.py:0
 #, python-format
 msgid ""
+"You cannot create a fiscal position with a country outside of the selected "
+"country group."
+msgstr "Nelze vytvořit fiskální pozici se zemí mimo vybranou skupinu zemí."
+
+#. module: account
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
 "You cannot create a fiscal position with a foreign VAT within your fiscal "
 "country without assigning it a state."
 msgstr ""
@@ -16321,7 +16371,7 @@ msgstr "Nelze odstranit položku spojenou s zaúčtovanou položkou."
 msgid ""
 "You cannot delete this account tag (%s), it is used on the chart of account "
 "definition."
-msgstr ""
+msgstr "Tento štítek účtu nelze smazat (%s), používá se v definici účtu."
 
 #. module: account
 #: code:addons/account/models/account_move.py:0

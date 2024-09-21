@@ -15,15 +15,16 @@
 # Vo Thanh Thuy, 2022
 # Thành Ka, 2022
 # Thin Tran <trvathin@gmail.com>, 2022
-# Thi Huong Nguyen, 2023
-#
+# Wil Odoo, 2024
+# Thi Huong Nguyen, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-10 14:27+0000\n"
+"POT-Creation-Date: 2024-08-14 15:43+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +35,7 @@ msgstr ""
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_onboarding_wizard___data_fetched
 msgid " Data Fetched"
-msgstr " Đã tìm nạp dữ liệu"
+msgstr " Dữ liệu đã được nạp"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.pay
@@ -100,15 +101,6 @@ msgstr ""
 "PayPal</span>"
 
 #. module: payment
-#: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_onboarding_wizard_form
-msgid ""
-"<span>Start selling directly without an account; an email will be sent by "
-"Paypal to create your new account and collect your payments.</span>"
-msgstr ""
-"<span>Bắt đầu bán hàng mà không cần tài khoản; một email sẽ được gửi tới "
-"Paypal để tạo tài khoản mới cho bạn và nhận thanh toán của bạn.</span>"
-
-#. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_methods
 msgid "<strong>No suitable payment acquirer could be found.</strong>"
 msgstr "<strong>Không tìm thấy nhà thanh toán nào phù hợp.</strong>"
@@ -148,8 +140,8 @@ msgid ""
 "<strong>Warning</strong> Make sure your are logged in as the right partner "
 "before making this payment."
 msgstr ""
-"<strong>Cảnh báo</strong> Hãy chắc chắn rằng bạn đã đăng nhập đúng tài khoản "
-"trước khi thực hiện thanh toán."
+"<strong>Cảnh báo</strong> Hãy chắc chắn rằng bạn đã đăng nhập đúng tài khoản"
+" trước khi thực hiện thanh toán."
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.pay
@@ -237,7 +229,7 @@ msgstr "Tài khoản tổ chức thanh toán"
 #: model:ir.model.fields,field_description:payment.field_payment_token__acquirer_ref
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__acquirer_reference
 msgid "Acquirer Reference"
-msgstr "Tham chiếu Tổ chức thanh toán"
+msgstr "Tham chiếu tổ chức thanh toán"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_icon__acquirer_ids
@@ -247,7 +239,7 @@ msgstr "Tổ chức thanh toán"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_icon_form
 msgid "Acquirers list"
-msgstr "Danh sách Tổ chức thanh toán"
+msgstr "Danh sách tổ chức thanh toán"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_kanban
@@ -267,7 +259,7 @@ msgstr "Có hiệu lực"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__fees_active
 msgid "Add Extra Fees"
-msgstr "Thêm Phí bổ sung"
+msgstr "Thêm phí bổ sung"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__partner_address
@@ -306,6 +298,13 @@ msgstr "Khoản hiện có để hoàn tiền"
 #: model:ir.model.fields,field_description:payment.field_payment_link_wizard__amount_max
 msgid "Amount Max"
 msgstr "Số tiền tối đa"
+
+#. module: payment
+#: model:ir.model.fields,field_description:payment.field_account_bank_statement_line__amount_paid
+#: model:ir.model.fields,field_description:payment.field_account_move__amount_paid
+#: model:ir.model.fields,field_description:payment.field_account_payment__amount_paid
+msgid "Amount paid"
+msgstr "Khoản đã trả"
 
 #. module: payment
 #. openerp-web
@@ -373,7 +372,7 @@ msgstr "Giao dịch được ủy quyền"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_form
 msgid "Availability"
-msgstr "Khả dụng"
+msgstr "Trạng thái khả dụng"
 
 #. module: payment
 #: code:addons/payment/wizards/payment_acquirer_onboarding_wizard.py:0
@@ -399,12 +398,12 @@ msgstr "Buckaroo"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__callback_model_id
 msgid "Callback Document Model"
-msgstr "Model tài liệu Callback"
+msgstr "Model tài liệu callback"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__callback_is_done
 msgid "Callback Done"
-msgstr "Hoàn tất Callback"
+msgstr "Hoàn tất callback"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__callback_hash
@@ -414,7 +413,7 @@ msgstr "Callback Hash"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__callback_method
 msgid "Callback Method"
-msgstr "Phương pháp Callback"
+msgstr "Phương thức callback"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__callback_res_id
@@ -444,7 +443,7 @@ msgstr "Tin nhắn đã hủy"
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
 msgid "Cancelled payments"
-msgstr "Thanh toán bị Huỷ"
+msgstr "Thanh toán bị huỷ"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__capture_manually
@@ -544,12 +543,12 @@ msgstr "Cấu hình"
 #: code:addons/payment/static/src/js/manage_form.js:0
 #, python-format
 msgid "Confirm Deletion"
-msgstr "Xác nhận Xóa"
+msgstr "Xác nhận xóa"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__state__done
 msgid "Confirmed"
-msgstr "Đã được xác nhận"
+msgstr "Đã xác nhận"
 
 #. module: payment
 #: model:ir.model,name:payment.model_res_partner
@@ -601,7 +600,7 @@ msgstr "Tạo một biểu tượng thanh toán mới"
 #: model:ir.model.fields,field_description:payment.field_payment_token__create_uid
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__create_uid
 msgid "Created by"
-msgstr "Được tạo bởi"
+msgstr "Tạo bởi"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__create_date
@@ -612,7 +611,7 @@ msgstr "Được tạo bởi"
 #: model:ir.model.fields,field_description:payment.field_payment_token__create_date
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__create_date
 msgid "Created on"
-msgstr "Thời điểm tạo"
+msgstr "Tạo vào"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_form
@@ -625,47 +624,53 @@ msgid "Credit & Debit Card"
 msgstr "Thẻ tín dụng & ghi nợ"
 
 #. module: payment
+#: model:ir.model.fields.selection,name:payment.selection__sale_payment_acquirer_onboarding_wizard__payment_method__stripe
+msgid "Credit & Debit card (via Stripe)"
+msgstr "Thẻ tín dụng và ghi nợ (qua Stripe)"
+
+#. module: payment
 #: model:payment.acquirer,display_as:payment.payment_acquirer_adyen
 msgid "Credit Card (powered by Adyen)"
-msgstr "Thẻ tín dụng (xử lý bởi Adyen)"
+msgstr "Thẻ tín dụng (được cung cấp bởi Adyen)"
 
 #. module: payment
 #: model:payment.acquirer,display_as:payment.payment_acquirer_alipay
 msgid "Credit Card (powered by Alipay)"
-msgstr "Thẻ tín dụng (xử lý bởi Alipay)"
+msgstr "Thẻ tín dụng (được cung cấp bởi Alipay)"
 
 #. module: payment
 #: model:payment.acquirer,display_as:payment.payment_acquirer_authorize
 msgid "Credit Card (powered by Authorize)"
-msgstr "Thẻ tín dụng (xử lý bởi Authorize)"
+msgstr "Thẻ tín dụng (được cung cấp bởi Authorize)"
 
 #. module: payment
 #: model:payment.acquirer,display_as:payment.payment_acquirer_buckaroo
 msgid "Credit Card (powered by Buckaroo)"
-msgstr "Thẻ tín dụng (xử lý bởi Buckaroo)"
+msgstr "Thẻ tín dụng (được cung cấp bởi Buckaroo)"
 
 #. module: payment
 #: model:payment.acquirer,display_as:payment.payment_acquirer_ogone
 msgid "Credit Card (powered by Ogone)"
-msgstr "Thẻ tín dụng (cung cấp bởi Ogone)"
+msgstr "Thẻ tín dụng (được cung cấp bởi Ogone)"
 
 #. module: payment
 #: model:payment.acquirer,display_as:payment.payment_acquirer_payulatam
 msgid "Credit Card (powered by PayU Latam)"
-msgstr "Thẻ tín dụng (xử lý bởi PayU Latam)"
+msgstr "Thẻ tín dụng (được cung cấp bởi PayU Latam)"
 
 #. module: payment
 #: model:payment.acquirer,display_as:payment.payment_acquirer_payumoney
 msgid "Credit Card (powered by PayUmoney)"
-msgstr "Thẻ tín dụng (xử lý bởi PayUmoney)"
+msgstr "Thẻ tín dụng (được cung cấp bởi PayUmoney)"
 
 #. module: payment
 #: model:payment.acquirer,display_as:payment.payment_acquirer_sips
 msgid "Credit Card (powered by Sips)"
-msgstr "Thẻ tín dụng (xử lý bởi Sips)"
+msgstr "Thẻ tín dụng (được cung cấp bởi Sips)"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_acquirer_onboarding_wizard__payment_method__stripe
+#: model:ir.model.fields.selection,name:payment.selection__website_sale_payment_acquirer_onboarding_wizard__payment_method__stripe
 msgid "Credit card (via Stripe)"
 msgstr "Thẻ tín dụng (thông qua Stripe)"
 
@@ -678,6 +683,8 @@ msgstr "Tiền tệ"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_acquirer_onboarding_wizard__payment_method__manual
+#: model:ir.model.fields.selection,name:payment.selection__sale_payment_acquirer_onboarding_wizard__payment_method__manual
+#: model:ir.model.fields.selection,name:payment.selection__website_sale_payment_acquirer_onboarding_wizard__payment_method__manual
 msgid "Custom payment instructions"
 msgstr "Tùy chỉnh giới thiệu phương thức thanh toán"
 
@@ -694,7 +701,7 @@ msgstr "Xác định trình tự xuất hiện"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__description
 msgid "Description"
-msgstr "Miêu tả"
+msgstr "Mô tả"
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer__display_as
@@ -789,15 +796,17 @@ msgstr "Hỗ trợ tính toán phí"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__fees_dom_fixed
 msgid "Fixed domestic fees"
-msgstr "Cố định phí trong nước"
+msgstr "Phí cố định trong nước"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__fees_int_fixed
 msgid "Fixed international fees"
-msgstr "Cố định phí quốc tế"
+msgstr "Phí cố định quốc tế"
 
 #. module: payment
+#: code:addons/payment/wizards/payment_link_wizard.py:0
 #: model:ir.model.fields,field_description:payment.field_payment_link_wizard__acquirer_id
+#, python-format
 msgid "Force Payment Acquirer"
 msgstr "Buộc người nhận thanh toán"
 
@@ -823,7 +832,7 @@ msgstr "Full Only"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_link_wizard_view_form
 msgid "Generate Payment Link"
-msgstr "Tạo một Thanh toán"
+msgstr "Tạo một thanh toán"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_link_wizard
@@ -833,7 +842,7 @@ msgstr "Tạo một Link Thanh toán bán hàng"
 #. module: payment
 #: model:ir.actions.act_window,name:payment.action_invoice_order_generate_link
 msgid "Generate a Payment Link"
-msgstr "Tạo một Link Thanh toán"
+msgstr "Tạo một link thanh toán"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_search
@@ -869,11 +878,15 @@ msgstr "Thông điệp trợ giúp"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_acquirer_onboarding_wizard__paypal_user_type__new_user
+#: model:ir.model.fields.selection,name:payment.selection__sale_payment_acquirer_onboarding_wizard__paypal_user_type__new_user
+#: model:ir.model.fields.selection,name:payment.selection__website_sale_payment_acquirer_onboarding_wizard__paypal_user_type__new_user
 msgid "I don't have a Paypal account"
 msgstr "Tôi không có tài khoản Paypal"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_acquirer_onboarding_wizard__paypal_user_type__existing_user
+#: model:ir.model.fields.selection,name:payment.selection__sale_payment_acquirer_onboarding_wizard__paypal_user_type__existing_user
+#: model:ir.model.fields.selection,name:payment.selection__website_sale_payment_acquirer_onboarding_wizard__paypal_user_type__existing_user
 msgid "I have a Paypal account"
 msgstr "Tôi có tài khoản Paypal"
 
@@ -918,7 +931,7 @@ msgstr "Hình ảnh"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_icon__image_payment_form
 msgid "Image displayed on the payment form"
-msgstr "Hình ảnh hiển thị trên form Thanh toán"
+msgstr "Hình ảnh hiển thị trên form thanh toán"
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_account_payment_method_line__payment_acquirer_state
@@ -1005,7 +1018,7 @@ msgstr "Vừa xong"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__landing_route
 msgid "Landing Route"
-msgstr "Landing Route"
+msgstr "Landing route"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__partner_lang
@@ -1021,7 +1034,7 @@ msgstr "Ngôn ngữ"
 #: model:ir.model.fields,field_description:payment.field_payment_token____last_update
 #: model:ir.model.fields,field_description:payment.field_payment_transaction____last_update
 msgid "Last Modified on"
-msgstr "Sửa lần cuối"
+msgstr "Sửa lần cuối vào"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__last_state_change
@@ -1048,7 +1061,7 @@ msgstr "Cập nhật lần cuối bởi"
 #: model:ir.model.fields,field_description:payment.field_payment_token__write_date
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__write_date
 msgid "Last Updated on"
-msgstr "Cập nhật lần cuối"
+msgstr "Cập nhật lần cuối vào"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_link_wizard_view_form
@@ -1058,7 +1071,7 @@ msgstr "Để trống để cho phép tất cả nhà thanh toán"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.pay_meth_link
 msgid "Manage payment methods"
-msgstr "Quản lý Phương thức Thanh toán"
+msgstr "Quản lý phương thức thanh toán"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__res_company__payment_onboarding_payment_method__manual
@@ -1251,6 +1264,8 @@ msgstr "Khác"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_acquirer_onboarding_wizard__payment_method__other
+#: model:ir.model.fields.selection,name:payment.selection__sale_payment_acquirer_onboarding_wizard__payment_method__other
+#: model:ir.model.fields.selection,name:payment.selection__website_sale_payment_acquirer_onboarding_wizard__payment_method__other
 msgid "Other payment acquirer"
 msgstr "Nhà CC dịch vụ thanh toán khác"
 
@@ -1275,7 +1290,7 @@ msgstr "Đối tác"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__partner_name
 msgid "Partner Name"
-msgstr "Tên Đối tác"
+msgstr "Tên đối tác"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.checkout
@@ -1285,6 +1300,8 @@ msgstr "Thanh toán"
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_acquirer_onboarding_wizard__payment_method__paypal
 #: model:ir.model.fields.selection,name:payment.selection__res_company__payment_onboarding_payment_method__paypal
+#: model:ir.model.fields.selection,name:payment.selection__sale_payment_acquirer_onboarding_wizard__payment_method__paypal
+#: model:ir.model.fields.selection,name:payment.selection__website_sale_payment_acquirer_onboarding_wizard__payment_method__paypal
 #: model:payment.acquirer,name:payment.payment_acquirer_paypal
 msgid "PayPal"
 msgstr "PayPal"
@@ -1332,12 +1349,12 @@ msgstr "Tổng thanh toán"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_form
 msgid "Payment Followup"
-msgstr "Bám sát Thanh toán"
+msgstr "Bám sát thanh toán"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_form
 msgid "Payment Form"
-msgstr "Form Thanh toán"
+msgstr "Form thanh toán"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_icon
@@ -1354,7 +1371,7 @@ msgstr "Biểu tượng thanh toán"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_onboarding_wizard__manual_post_msg
 msgid "Payment Instructions"
-msgstr "Hướng dẫn Thanh toán"
+msgstr "Hướng dẫn thanh toán"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__journal_id
@@ -1364,7 +1381,7 @@ msgstr "Nhật kí thanh toán"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_link_wizard__link
 msgid "Payment Link"
-msgstr "Link Thanh toán"
+msgstr "Link thanh toán"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_onboarding_wizard__payment_method
@@ -1379,7 +1396,7 @@ msgstr "Phương thức Thanh toán"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_link_wizard__description
 msgid "Payment Ref"
-msgstr "Dẫn chiếu Thanh toán"
+msgstr "Dẫn chiếu thanh toán"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_refund_wizard
@@ -1415,7 +1432,7 @@ msgstr "Mã thanh toán"
 #: model:ir.model.fields,field_description:payment.field_payment_refund_wizard__transaction_id
 #: model_terms:ir.ui.view,arch_db:payment.account_invoice_view_form_inherit_payment
 msgid "Payment Transaction"
-msgstr "Giao dịch Thanh toán"
+msgstr "Giao dịch thanh toán"
 
 #. module: payment
 #: model:ir.actions.act_window,name:payment.action_payment_transaction
@@ -1424,7 +1441,7 @@ msgstr "Giao dịch Thanh toán"
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_form
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_list
 msgid "Payment Transactions"
-msgstr "Giao dịch Thanh toán"
+msgstr "Giao dịch thanh toán"
 
 #. module: payment
 #: model:ir.actions.act_window,name:payment.action_payment_transaction_linked_to_token
@@ -1474,7 +1491,7 @@ msgstr "Đang chờ"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__pending_msg
 msgid "Pending Message"
-msgstr "Thông điệp Treo"
+msgstr "Thông điệp treo"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__partner_phone
@@ -1502,12 +1519,6 @@ msgid "Please set an amount smaller than %s."
 msgstr "Vui lòng thiết lập một giá trị nhỏ hơn %s."
 
 #. module: payment
-#: code:addons/payment/controllers/portal.py:0
-#, python-format
-msgid "Please switch to company '%s' to make this payment."
-msgstr ""
-
-#. module: payment
 #: model_terms:payment.acquirer,pending_msg:payment.payment_acquirer_transfer
 msgid "Please use the following transfer details"
 msgstr "Vui lòng sử dụng các chi tiết chuyển khoản sau"
@@ -1527,7 +1538,7 @@ msgstr "Vui lòng đợi ..."
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.confirm
 msgid "Processed by"
-msgstr "Được Xử lý bởi"
+msgstr "Được xử lý bởi"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__provider
@@ -1680,27 +1691,27 @@ msgstr "Lỗi máy chủ:"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__show_allow_tokenization
 msgid "Show Allow Tokenization"
-msgstr "Hiển thị Cho phép token hoá"
+msgstr "Hiển thị cho phép token hoá"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__show_auth_msg
 msgid "Show Auth Msg"
-msgstr "Hiển thị Thông báo uỷ quyền"
+msgstr "Hiển thị thông báo uỷ quyền"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__show_cancel_msg
 msgid "Show Cancel Msg"
-msgstr "Hiển thị Thông báo huỷ"
+msgstr "Hiển thị thông báo huỷ"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__show_credentials_page
 msgid "Show Credentials Page"
-msgstr "Hiển thị Trang thông tin đăng nhập"
+msgstr "Hiển thị trang thông tin đăng nhập"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__show_done_msg
 msgid "Show Done Msg"
-msgstr "Hiển thị Thông báo hoàn tất"
+msgstr "Hiển thị thông báo hoàn tất"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__show_payment_icon_ids
@@ -1710,12 +1721,12 @@ msgstr ""
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__show_pending_msg
 msgid "Show Pending Msg"
-msgstr "Hiển thị Thông báo treo"
+msgstr "Hiển thị thông báo treo"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__show_pre_msg
 msgid "Show Pre Msg"
-msgstr "Hiển thị Thông báo pre"
+msgstr "Hiển thị thông báo pre"
 
 #. module: payment
 #: model:payment.acquirer,name:payment.payment_acquirer_sips
@@ -1754,7 +1765,7 @@ msgstr "Trạng thái các bước thanh toán mới của tổ chức thanh to�
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__state
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_search
 msgid "Status"
-msgstr "Tình trạng"
+msgstr "Trạng thái"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__res_company__payment_onboarding_payment_method__stripe
@@ -1823,6 +1834,13 @@ msgstr ""
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_transaction__acquirer_reference
 msgid "The acquirer reference of the transaction"
+msgstr ""
+
+#. module: payment
+#: model:ir.model.fields,help:payment.field_account_bank_statement_line__amount_paid
+#: model:ir.model.fields,help:payment.field_account_move__amount_paid
+#: model:ir.model.fields,help:payment.field_account_payment__amount_paid
+msgid "The amount already paid for this invoice."
 msgstr ""
 
 #. module: payment
@@ -1966,8 +1984,9 @@ msgstr ""
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s encountered an error "
 "(%(acq_name)s)."
-msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s gặp lỗi"
-"(%(acq_name)s)."
+msgstr ""
+"Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s gặp "
+"lỗi(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/models/payment_transaction.py:0
@@ -1975,8 +1994,9 @@ msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s gặp 
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s has been authorized "
 "(%(acq_name)s)."
-msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đã được ủy quyền"
-"(%(acq_name)s)."
+msgstr ""
+"Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đã được ủy "
+"quyền(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/models/payment_transaction.py:0
@@ -1984,8 +2004,9 @@ msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đã �
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s has been confirmed "
 "(%(acq_name)s)."
-msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đã được xác nhận"
-"(%(acq_name)s)."
+msgstr ""
+"Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đã được xác "
+"nhận(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/models/payment_transaction.py:0
@@ -1993,8 +2014,9 @@ msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đã �
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s is canceled "
 "(%(acq_name)s)."
-msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s bị hủy bỏ"
-"(%(acq_name)s)."
+msgstr ""
+"Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s bị hủy "
+"bỏ(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/models/payment_transaction.py:0
@@ -2002,8 +2024,9 @@ msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s bị h
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s is pending "
 "(%(acq_name)s)."
-msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đang chờ xử lý"
-"(%(acq_name)s)."
+msgstr ""
+"Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đang chờ xử "
+"lý(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/wizards/payment_link_wizard.py:0
@@ -2234,12 +2257,14 @@ msgid "You can click here to be redirected to the confirmation page."
 msgstr "Bạn có thể bấm vào đây để chuyển hướng đến trang xác nhận."
 
 #. module: payment
-#: code:addons/payment/models/account_journal.py:0
+#: code:addons/payment/models/account_payment_method.py:0
 #, python-format
 msgid ""
-"You can't delete a payment method that is linked to an acquirer in the enabled or test state.\n"
-"Linked acquirer(s): %s"
+"You can't delete a payment method that is linked to a provider in the enabled or test state.\n"
+"Linked providers(s): %s"
 msgstr ""
+"Bạn không thể xóa phương thức thanh toán được liên kết với nhà cung cấp ở trạng thái kích hoạt hoặc kiểm thử.\n"
+"(Các) nhà cung cấp được liên kết:%s"
 
 #. module: payment
 #: code:addons/payment/models/ir_ui_view.py:0
@@ -2248,10 +2273,26 @@ msgid "You cannot delete a view that is used by a payment acquirer."
 msgstr ""
 
 #. module: payment
+#: code:addons/payment/models/payment_acquirer.py:0
+#, python-format
+msgid ""
+"You cannot delete the payment acquirer %s; disable it or uninstall it "
+"instead."
+msgstr ""
+
+#. module: payment
 #: code:addons/payment/controllers/portal.py:0
 #, python-format
 msgid "You do not have access to this payment token."
 msgstr "Bạn không có quyền truy cập token thanh toán này. "
+
+#. module: payment
+#: code:addons/payment/models/account_journal.py:0
+#, python-format
+msgid ""
+"You must first deactivate a payment acquirer before deleting its journal.\n"
+"Linked acquirer(s): %s"
+msgstr ""
 
 #. module: payment
 #. openerp-web
@@ -2280,14 +2321,14 @@ msgstr "Bạn sẽ được thông báo khi thanh toán được xác nhận đ�
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
 msgid "Your order has been processed."
-msgstr "Đơn của bạn đã được xử lý."
+msgstr "Đơn bán của bạn đã được xử lý."
 
 #. module: payment
 #. openerp-web
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
 msgid "Your order is being processed, please wait ..."
-msgstr "Đơn của bạn đang được xử lý, vui lòng chờ ..."
+msgstr "Đơn bán của bạn đang được xử lý, vui lòng chờ..."
 
 #. module: payment
 #: code:addons/payment/models/payment_acquirer.py:0
@@ -2307,7 +2348,7 @@ msgstr "Đơn của bạn đang được xử lý, vui lòng chờ ..."
 #: model_terms:payment.acquirer,auth_msg:payment.payment_acquirer_transfer
 #, python-format
 msgid "Your payment has been authorized."
-msgstr "Thanh toán của bạn đã được chứng thực."
+msgstr "Thanh toán của bạn đã được chấp thuận."
 
 #. module: payment
 #: code:addons/payment/models/payment_acquirer.py:0
@@ -2327,14 +2368,14 @@ msgstr "Thanh toán của bạn đã được chứng thực."
 #: model_terms:payment.acquirer,cancel_msg:payment.payment_acquirer_transfer
 #, python-format
 msgid "Your payment has been cancelled."
-msgstr "Khoản thanh toán của bạn đã bị hủy."
+msgstr "Thanh toán của bạn đã bị hủy."
 
 #. module: payment
 #. openerp-web
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
 msgid "Your payment has been received but need to be confirmed manually."
-msgstr "Thanh toán của bạn đã nhận nhưng cần xác nhận thủ công."
+msgstr "Thanh toán của bạn đã được nhận nhưng cần được xác nhận thủ công."
 
 #. module: payment
 #: code:addons/payment/models/payment_acquirer.py:0
@@ -2355,8 +2396,7 @@ msgstr "Thanh toán của bạn đã nhận nhưng cần xác nhận thủ công
 msgid ""
 "Your payment has been successfully processed but is waiting for approval."
 msgstr ""
-"Khoản thanh toán của bạn đã được xử lý thành công nhưng vẫn đang đợi phê "
-"duyệt."
+"Thanh toán của bạn đã được xử lý thành công nhưng vẫn đang chờ phê duyệt."
 
 #. module: payment
 #: code:addons/payment/models/payment_acquirer.py:0
@@ -2376,7 +2416,7 @@ msgstr ""
 #: model_terms:payment.acquirer,done_msg:payment.payment_acquirer_transfer
 #, python-format
 msgid "Your payment has been successfully processed. Thank you!"
-msgstr "Khoản thanh toán của bạn đã được xử lý thành công. Xin cảm ơn!"
+msgstr "Thanh toán của bạn đã được xử lý thành công. Xin cảm ơn!"
 
 #. module: payment
 #. openerp-web
@@ -2388,7 +2428,7 @@ msgstr "Thanh toán của bạn đang treo."
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_form
 msgid "ZIP"
-msgstr "ZIP"
+msgstr "Mã bưu chính"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__partner_zip

@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 13:18+0000\n"
+"POT-Creation-Date: 2024-08-14 15:42+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
 "Last-Translator: Mostafa Barmshory <mostafa.barmshory@gmail.com>, 2024\n"
 "Language-Team: Persian (https://app.transifex.com/odoo/teams/41243/fa/)\n"
@@ -237,6 +237,7 @@ msgstr ""
 "* مکان ترانزیت: موقعیت همتای دیگری که باید در عملیات بین شرکتی یا بین انباری استفاده شود"
 
 #. module: stock
+#: code:addons/stock/models/stock_rule.py:0
 #: code:addons/stock/models/stock_rule.py:0
 #, python-format
 msgid "+ %d day(s)"
@@ -524,11 +525,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.report_delivery_document
 msgid "<span>Remaining quantities not yet delivered:</span>"
 msgstr "<span>مقدارهای باقیمانده هنوز تحویل نشده اند:</span>"
-
-#. module: stock
-#: model_terms:ir.ui.view,arch_db:stock.stock_storage_category_form
-msgid "<span>kg</span>"
-msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_package_type_form
@@ -1100,6 +1096,7 @@ msgstr "محصولات موجود"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__available_quantity
+#: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_form_editable
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_inventory_editable
 msgid "Available Quantity"
 msgstr "مقدار در دسترس"
@@ -1633,6 +1630,11 @@ msgid ""
 msgstr ""
 "تبدیل بین واحدهای اندازه گیری تنها در صورتی می تواند اتفاق بیفتد که به یک "
 "دسته تعلق داشته باشند. تبدیل بر اساس نسبت ها انجام خواهد شد."
+
+#. module: stock
+#: model:ir.actions.server,name:stock.stock_quant_stock_move_line_desynchronization
+msgid "Correct inconsistencies for reservation"
+msgstr ""
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__posx
@@ -2720,6 +2722,12 @@ msgid "First SN"
 msgstr ""
 
 #. module: stock
+#: code:addons/stock/models/stock_quant.py:0
+#, python-format
+msgid "Fix discrepancies"
+msgstr ""
+
+#. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_rule__group_propagation_option__fixed
 msgid "Fixed"
 msgstr "ثابت"
@@ -3471,12 +3479,14 @@ msgstr ""
 
 #. module: stock
 #: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
+#: code:addons/stock/models/stock_production_lot.py:0
 #, python-format
 msgid "Invalid domain operator %s"
 msgstr "اپراتور دامنه نامعتبر %s"
 
 #. module: stock
 #: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
+#: code:addons/stock/models/stock_production_lot.py:0
 #, python-format
 msgid "Invalid domain right operand '%s'. It must be of type Integer/Float"
 msgstr ""
@@ -3979,7 +3989,7 @@ msgstr "اگر این مسیر بین همه شرکت ها مشترک است، �
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
 msgid "Legend"
-msgstr ""
+msgstr "اسطوره"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_package_type__packaging_length
@@ -4031,7 +4041,6 @@ msgstr "نمای لیست عملیات"
 #: model_terms:ir.ui.view,arch_db:stock.stock_reorder_report_search
 #: model_terms:ir.ui.view,arch_db:stock.stock_scrap_search_view
 #: model_terms:ir.ui.view,arch_db:stock.view_location_tree2
-#: model_terms:ir.ui.view,arch_db:stock.view_move_search
 #: model_terms:ir.ui.view,arch_db:stock.view_production_lot_form
 #: model_terms:ir.ui.view,arch_db:stock.warehouse_orderpoint_search
 msgid "Location"
@@ -4100,6 +4109,11 @@ msgstr "لجستیک"
 #: model:ir.model.fields.selection,name:stock.selection__barcode_rule__type__lot
 msgid "Lot"
 msgstr "سری ساخت"
+
+#. module: stock
+#: model:ir.model,name:stock.model_report_stock_label_lot_template_view
+msgid "Lot Label Report"
+msgstr ""
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_production_lot
@@ -4293,13 +4307,9 @@ msgstr "حداکثر مقدار"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_package_type__max_weight
 #: model:ir.model.fields,field_description:stock.field_stock_storage_category__max_weight
+#: model_terms:ir.ui.view,arch_db:stock.stock_storage_category_tree
 msgid "Max Weight"
 msgstr "حداکثر وزن"
-
-#. module: stock
-#: model_terms:ir.ui.view,arch_db:stock.stock_storage_category_tree
-msgid "Max Weight (kg)"
-msgstr "حداکثر وزن (kg)"
 
 #. module: stock
 #: model:ir.model.constraint,message:stock.constraint_stock_package_type_positive_max_weight
@@ -4379,7 +4389,6 @@ msgid "Minimum Stock Rules"
 msgstr "قوانین موجودی کمینه"
 
 #. module: stock
-#: model:ir.model.fields,field_description:stock.field_report_stock_quantity__move_ids
 #: model:ir.model.fields,field_description:stock.field_stock_assign_serial__move_id
 #: model:ir.model.fields,field_description:stock.field_stock_package_level__move_ids
 #: model:ir.model.fields,field_description:stock.field_stock_return_picking_line__move_id
@@ -7246,7 +7255,6 @@ msgstr "تحلیل انتقال موجودی"
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
-#: model:ir.actions.act_window,name:stock.dashboard_open_quants
 #, python-format
 msgid "Stock On Hand"
 msgstr "موجودی در دست"
@@ -8344,6 +8352,7 @@ msgstr "درگاه USPS"
 #. module: stock
 #. openerp-web
 #: code:addons/stock/static/src/js/report_stock_reception.js:0
+#: code:addons/stock/static/src/js/report_stock_reception.js:0
 #: model_terms:ir.ui.view,arch_db:stock.report_reception_body
 #, python-format
 msgid "Unassign"
@@ -8483,6 +8492,7 @@ msgstr "بروزرسانی تعداد محصول"
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
+#: model:ir.actions.act_window,name:stock.dashboard_open_quants
 #: model_terms:ir.ui.view,arch_db:stock.product_form_view_procurement_button
 #: model_terms:ir.ui.view,arch_db:stock.product_product_view_form_easy_inherit_stock
 #: model_terms:ir.ui.view,arch_db:stock.product_template_form_view_procurement_button

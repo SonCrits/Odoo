@@ -17,9 +17,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 10:28+0000\n"
+"POT-Creation-Date: 2024-08-14 15:42+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
 "Last-Translator: Mostafa Barmshory <mostafa.barmshory@gmail.com>, 2024\n"
 "Language-Team: Persian (https://app.transifex.com/odoo/teams/41243/fa/)\n"
@@ -28,6 +28,29 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Language: fa\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: mass_mailing_sms
+#. openerp-web
+#: code:addons/mass_mailing_sms/static/src/js/fields_sms_widget.js:0
+#, python-format
+msgid ""
+"%s characters (including link trackers and opt-out link), fits in %s SMS "
+"(%s) "
+msgstr ""
+
+#. module: mass_mailing_sms
+#. openerp-web
+#: code:addons/mass_mailing_sms/static/src/js/fields_sms_widget.js:0
+#, python-format
+msgid "%s characters (including link trackers), fits in %s SMS (%s) "
+msgstr ""
+
+#. module: mass_mailing_sms
+#. openerp-web
+#: code:addons/mass_mailing_sms/static/src/js/fields_sms_widget.js:0
+#, python-format
+msgid "%s characters (including opt-out link), fits in %s SMS (%s) "
+msgstr ""
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
@@ -260,7 +283,6 @@ msgstr ""
 
 #. module: mass_mailing_sms
 #: model:mailing.mailing,name:mass_mailing_sms.mailing_sms_1
-#: model:mailing.mailing,sms_subject:mass_mailing_sms.mailing_sms_1
 #: model:utm.source,name:mass_mailing_sms.mailing_sms_1_utm_source
 msgid "Extra Promo"
 msgstr ""
@@ -587,7 +609,12 @@ msgstr ""
 #. module: mass_mailing_sms
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_optout
 msgid "Opted Out"
-msgstr ""
+msgstr "انصراف داد"
+
+#. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+msgid "Options"
+msgstr "گزینه‌ها"
 
 #. module: mass_mailing_sms
 #: model:ir.model,name:mass_mailing_sms.model_sms_sms
@@ -722,7 +749,7 @@ msgstr ""
 #. module: mass_mailing_sms
 #: code:addons/mass_mailing_sms/wizard/sms_composer.py:0
 #, python-format
-msgid "STOP SMS : %s"
+msgid "STOP SMS : %(unsubscribe_url)s"
 msgstr ""
 
 #. module: mass_mailing_sms
@@ -947,7 +974,6 @@ msgstr ""
 
 #. module: mass_mailing_sms
 #: model:mailing.mailing,name:mass_mailing_sms.mailing_sms_0
-#: model:mailing.mailing,sms_subject:mass_mailing_sms.mailing_sms_0
 #: model:utm.campaign,name:mass_mailing_sms.utm_campaign_0
 #: model:utm.source,name:mass_mailing_sms.mailing_sms_0_utm_source
 msgid "XMas Promo"

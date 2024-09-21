@@ -5,7 +5,6 @@
 # Translators:
 # fanha99 <fanha99@hotmail.com>, 2021
 # Hoa Thi <giaphoa196@gmail.com>, 2021
-# Thang Duong Bao <nothingctrl@gmail.com>, 2021
 # Duy BQ <duybq86@gmail.com>, 2021
 # Minh Nguyen <ndminh210994@gmail.com>, 2021
 # Trinh Tran Thi Phuong <trinhttp@trobz.com>, 2021
@@ -14,13 +13,14 @@
 # Martin Trigaux, 2022
 # Nancy Momoland <thanh.np2502@gmail.com>, 2022
 # Thang Nguyen, 2023
+# Wil Odoo, 2024
 # Thi Huong Nguyen, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 10:55+0000\n"
+"POT-Creation-Date: 2024-08-14 15:44+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
@@ -35,7 +35,7 @@ msgstr ""
 #: code:addons/portal/static/src/js/portal_sidebar.js:0
 #, python-format
 msgid "%1d days overdue"
-msgstr ""
+msgstr "quá hạn %1d ngày"
 
 #. module: portal
 #: code:addons/portal/controllers/portal.py:0
@@ -92,9 +92,25 @@ msgid ""
 " not allowed once document(s) have been issued for your account. <br/>Please"
 " contact us directly for this operation.</small>"
 msgstr ""
-"<small class=\"form-text text-muted\">Đổi tên công ty hoặc mã số thuế thì không"
-" được phép một khi đã có các tài liệu liên quan được phát hành. <br/>Vui lòng"
-" liên hệ trực tiếp với chúng tôi để được trợ giúp.</small>"
+"<small class=\"form-text text-muted\">Đổi tên công ty hoặc mã số thuế thì "
+"không được phép một khi đã có các tài liệu liên quan được phát hành. "
+"<br/>Vui lòng liên hệ trực tiếp với chúng tôi để được trợ giúp.</small>"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.pager
+msgid ""
+"<span class=\"fa fa-chevron-left\" role=\"img\" aria-label=\"Previous\" "
+"title=\"Previous\"/>"
+msgstr ""
+"<span class=\"fa fa-chevron-left\" role=\"img\" aria-label=\"Trước\" "
+"title=\"Trước\"/>"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.pager
+msgid "<span class=\"fa fa-chevron-right\" role=\"img\" aria-label=\"Next\" title=\"Next\"/>"
+msgstr ""
+"<span class=\"fa fa-chevron-right\" role=\"img\" aria-label=\"Tiếp theo\" "
+"title=\"Tiếp theo\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
@@ -211,7 +227,7 @@ msgstr "Khóa API đã sẵn sàng"
 #: code:addons/portal/static/src/js/portal_signature.js:0
 #, python-format
 msgid "Accept & Sign"
-msgstr "Chấp thuận & Ký"
+msgstr "Chấp thuận & ký"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_mixin__access_warning
@@ -250,12 +266,6 @@ msgstr "Thêm nội dung bổ sung để hiển thị trong email"
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Added On"
 msgstr "Đã thêm vào"
-
-#. module: portal
-#: code:addons/portal/controllers/mail.py:0
-#, python-format
-msgid "An access token must be provided for each attachment."
-msgstr "Token truy cập phải được cung cấp cho từng đính kèm."
 
 #. module: portal
 #. openerp-web
@@ -330,7 +340,7 @@ msgstr "Đóng"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 msgid "Company Name"
-msgstr "Tên Công ty"
+msgstr "Tên công ty"
 
 #. module: portal
 #: model:ir.model,name:portal.model_res_config_settings
@@ -393,14 +403,14 @@ msgstr "Quốc gia"
 #: model:ir.model.fields,field_description:portal.field_portal_wizard__create_uid
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__create_uid
 msgid "Created by"
-msgstr "Được tạo bởi"
+msgstr "Tạo bởi"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share__create_date
 #: model:ir.model.fields,field_description:portal.field_portal_wizard__create_date
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__create_date
 msgid "Created on"
-msgstr "Thời điểm tạo"
+msgstr "Tạo vào"
 
 #. module: portal
 #. openerp-web
@@ -432,7 +442,7 @@ msgstr "Khoá API của khách hàng"
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_mixin__access_url
 msgid "Customer Portal URL"
-msgstr "URL Cổng thông tin Khách hàng"
+msgstr "URL cổng thông tin khách hàng"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_template
@@ -460,7 +470,7 @@ msgstr "Chi tiết"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Developer API Keys"
-msgstr "Developer API Keys"
+msgstr "Developer API keys"
 
 #. module: portal
 #. openerp-web
@@ -499,7 +509,7 @@ msgstr "Đến hạn hôm nay"
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__email
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 msgid "Email"
-msgstr "Thư điện tử"
+msgstr "Email"
 
 #. module: portal
 #: model:ir.model,name:portal.model_mail_thread
@@ -511,7 +521,7 @@ msgstr "Luồng Email"
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Employees Only"
-msgstr "Chỉ Nhân viên"
+msgstr "Chỉ nhân viên"
 
 #. module: portal
 #. openerp-web
@@ -535,7 +545,7 @@ msgstr "Cấp quyền truy cập"
 #. module: portal
 #: model:ir.model,name:portal.model_portal_wizard
 msgid "Grant Portal Access"
-msgstr "Cấp quyền truy cập Portal"
+msgstr "Cấp quyền truy cập portal"
 
 #. module: portal
 #: model:ir.actions.act_window,name:portal.partner_wizard_action
@@ -579,16 +589,16 @@ msgid "Important:"
 msgstr "Quan trọng:"
 
 #. module: portal
-#: model_terms:ir.ui.view,arch_db:portal.wizard_view
-msgid "Internal User"
-msgstr "Người sử dụng nội bộ"
-
-#. module: portal
 #. openerp-web
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Internal Note"
 msgstr "Ghi chú nội bộ"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.wizard_view
+msgid "Internal User"
+msgstr "Người sử dụng nội bộ"
 
 #. module: portal
 #. openerp-web
@@ -617,12 +627,12 @@ msgstr "Thư mời"
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__is_internal
 msgid "Is Internal"
-msgstr "Là Nội bộ"
+msgstr "Là nội bộ"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__is_portal
 msgid "Is Portal"
-msgstr "Là Portal"
+msgstr "Là portal"
 
 #. module: portal
 #. openerp-web
@@ -636,11 +646,18 @@ msgstr ""
 "                 và đầy đủ,"
 
 #. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_security.xml:0
+#, python-format
+msgid "Key Description"
+msgstr "Mô tả mã khoá"
+
+#. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share____last_update
 #: model:ir.model.fields,field_description:portal.field_portal_wizard____last_update
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user____last_update
 msgid "Last Modified on"
-msgstr "Sửa lần cuối"
+msgstr "Sửa lần cuối vào"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share__write_uid
@@ -654,7 +671,7 @@ msgstr "Cập nhật lần cuối bởi"
 #: model:ir.model.fields,field_description:portal.field_portal_wizard__write_date
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__write_date
 msgid "Last Updated on"
-msgstr "Cập nhật lần cuối"
+msgstr "Cập nhật lần cuối vào"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__login_date
@@ -701,7 +718,7 @@ msgstr ""
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.my_account_link
 msgid "My Account"
-msgstr "Tài khoản của Tôi"
+msgstr "Tài khoản của tôi"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
@@ -732,7 +749,6 @@ msgstr "Mật khẩu mới:"
 #. openerp-web
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
-#: model_terms:ir.ui.view,arch_db:portal.pager
 #, python-format
 msgid "Next"
 msgstr "Tiếp"
@@ -792,12 +808,12 @@ msgstr "Vui lòng nhập mật khẩu để xác nhận bạn sở hữu tài kh
 #: model_terms:ir.ui.view,arch_db:portal.wizard_view
 #, python-format
 msgid "Portal Access Management"
-msgstr "Quản lý Truy cập Portal"
+msgstr "Quản lý truy cập portal"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_mixin__access_url
 msgid "Portal Access URL"
-msgstr "URL Truy cập Portal"
+msgstr "URL truy cập portal"
 
 #. module: portal
 #: model:ir.model,name:portal.model_portal_mixin
@@ -812,7 +828,7 @@ msgstr "Portal Sharing"
 #. module: portal
 #: model:ir.model,name:portal.model_portal_wizard_user
 msgid "Portal User Config"
-msgstr "Cấu hình Người dùng Portal"
+msgstr "Cấu hình người dùng portal"
 
 #. module: portal
 #: model:mail.template,name:portal.mail_template_data_portal_welcome
@@ -823,11 +839,6 @@ msgstr "Portal: Mời người dùng"
 #: model_terms:ir.ui.view,arch_db:portal.portal_record_sidebar
 msgid "Powered by"
 msgstr "Nền tảng"
-
-#. module: portal
-#: model_terms:ir.ui.view,arch_db:portal.pager
-msgid "Prev"
-msgstr "Trước"
 
 #. module: portal
 #. openerp-web
@@ -867,12 +878,12 @@ msgstr "ID tài liệu liên quan"
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share__res_model
 msgid "Related Document Model"
-msgstr "Đối tượng Tài liệu liên quan"
+msgstr "Đối tượng tài liệu liên quan"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.wizard_view
 msgid "Revoke Access"
-msgstr "Thu hồi Quyền truy cập"
+msgstr "Thu hồi quyền truy cập"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
@@ -892,6 +903,7 @@ msgstr "Bảo mật"
 #. module: portal
 #. openerp-web
 #: code:addons/portal/static/src/js/portal.js:0
+#: code:addons/portal/static/src/xml/portal_security.xml:0
 #, python-format
 msgid "Security Control"
 msgstr "Kiểm soát an ninh"
@@ -925,12 +937,12 @@ msgstr "Gửi"
 #: model:ir.actions.act_window,name:portal.portal_share_action
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_wizard
 msgid "Share Document"
-msgstr "Chia sẻ Tài liệu"
+msgstr "Chia sẻ tài liệu"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_ir_ui_view__customize_show
 msgid "Show As Optional Inherit"
-msgstr "Hiển thị như Kế thừa tùy chọn"
+msgstr "Hiển thị như kế thừa tùy chọn"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.user_sign_in
@@ -945,8 +957,8 @@ msgid ""
 "Some fields are required. Please make sure to write a message or attach a "
 "document"
 msgstr ""
-"Một số trường thông tin là bắt buộc. Vui lòng chắc chắn rằng bạn viết gì đó"
-" hoặc có đính kèm một tài liệu."
+"Một số trường thông tin là bắt buộc. Vui lòng chắc chắn rằng bạn viết gì đó "
+"hoặc có đính kèm một tài liệu."
 
 #. module: portal
 #: code:addons/portal/controllers/portal.py:0
@@ -957,7 +969,7 @@ msgstr "Một số trường bắt buộc vẫn đang để trống."
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 msgid "State / Province"
-msgstr "Bang / Tỉnh"
+msgstr "Bang / tỉnh"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
@@ -969,7 +981,7 @@ msgstr "Địa chỉ"
 #: code:addons/portal/static/src/xml/portal_signature.xml:0
 #, python-format
 msgid "Thank You!"
-msgstr "Cám ơn bạn!"
+msgstr "Cảm ơn bạn!"
 
 #. module: portal
 #: code:addons/portal/controllers/portal.py:0
@@ -983,13 +995,6 @@ msgstr "Không thể xóa đính kèm %s vì nó liên kết đến thông đi�
 msgid ""
 "The attachment %s cannot be removed because it is not in a pending state."
 msgstr "Không thể xóa đính kèm %s vì nó không ở trạng thái treo."
-
-#. module: portal
-#: code:addons/portal/controllers/mail.py:0
-#, python-format
-msgid ""
-"The attachment %s does not exist or you do not have the rights to access it."
-msgstr "Đính kèm %s không tồn tại hoặc bạn không có quyền truy cập nó."
 
 #. module: portal
 #: code:addons/portal/controllers/portal.py:0
@@ -1117,12 +1122,12 @@ msgstr "Người dùng"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 msgid "VAT Number"
-msgstr "MS Thuế GTGT"
+msgstr "MS thuế GTGT"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Verify New Password:"
-msgstr "Xác nhận Mật khẩu mới:"
+msgstr "Xác nhận mật khẩu mới:"
 
 #. module: portal
 #: model:ir.model,name:portal.model_ir_ui_view
@@ -1169,7 +1174,7 @@ msgstr "Hiện"
 #: model:ir.model.fields,field_description:portal.field_res_partner__website_message_ids
 #: model:ir.model.fields,field_description:portal.field_res_users__website_message_ids
 msgid "Website Messages"
-msgstr "Thông điệp Website"
+msgstr "Thông điệp website"
 
 #. module: portal
 #: model:ir.model.fields,help:portal.field_account_analytic_account__website_message_ids
@@ -1276,7 +1281,7 @@ msgstr "Liên hệ của bạn"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 msgid "Zip / Postal Code"
-msgstr "Mã Zip/Bưu chính"
+msgstr "Mã bưu chính"
 
 #. module: portal
 #. openerp-web
@@ -1351,4 +1356,5 @@ msgstr "để đăng một bình luận."
 #: code:addons/portal/static/src/xml/portal_security.xml:0
 #, python-format
 msgid "to your user account, it is very important to store it securely."
-msgstr "cho tài khoản người dùng của bạn. Điều quan trọng là hãy lưu trữ nó an toàn."
+msgstr ""
+"cho tài khoản người dùng của bạn. Điều quan trọng là hãy lưu trữ nó an toàn."
