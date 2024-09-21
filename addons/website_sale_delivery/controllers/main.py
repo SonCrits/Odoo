@@ -4,8 +4,8 @@
 from odoo import http, _
 from odoo.http import request
 from odoo.addons.payment import utils as payment_utils
-from odoo.addons.website_sale.controllers.main import WebsiteSale
-from odoo.exceptions import UserError
+from odoo.addons.website_sale.controllers.main import WebsiteSale, PaymentPortal
+from odoo.exceptions import UserError, ValidationError
 
 
 class WebsiteSaleDelivery(WebsiteSale):
@@ -65,6 +65,9 @@ class WebsiteSaleDelivery(WebsiteSale):
     @http.route()
     def cart(self, **post):
         order = request.website.sale_get_order()
+        if order and order.state != 'draft':
+            request.session['sale_order_id'] = None
+            order = request.website.sale_get_order()
         if order and order.carrier_id:
             # Express checkout is based on the amout of the sale order. If there is already a
             # delivery line, Express Checkout form will display and compute the price of the
@@ -322,3 +325,13 @@ class WebsiteSaleDelivery(WebsiteSale):
                 'new_amount_total_raw': order.amount_total,
             }
         return {}
+
+
+class PaymentPortalDelivery(PaymentPortal):
+
+    @http.route()
+    def shop_payment_transaction(self, *args, **kwargs):
+        order = request.website.sale_get_order()
+        if not order.only_services and not order.carrier_id:
+            raise ValidationError(_("No shipping method is selected."))
+        return super().shop_payment_transaction(*args, **kwargs)

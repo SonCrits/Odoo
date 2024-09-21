@@ -48,6 +48,7 @@ _ref_vat = {
     'hu': _('HU12345676 or 12345678-1-11 or 8071592153'),
     'hr': 'HR01234567896',  # Croatia, contributed by Milan Tribuson
     'ie': 'IE1234567FA',
+    'il': _('XXXXXXXXX [9 digits] and it should respect the Luhn algorithm checksum'),
     'in': "12AAAAA1234AAZA",
     'is': 'IS062199',
     'it': 'IT12345670017',
@@ -120,6 +121,7 @@ class ResPartner(models.Model):
     def _check_vies(self, vat):
         # Store the VIES result in the cache. In case an exception is raised during the request
         # (e.g. service unavailable), the fallback on simple_vat_check is not kept in cache.
+        _logger.info('Calling VIES service to check VAT for validation: %s', vat)
         return check_vies(vat)
 
     @api.model
@@ -361,22 +363,9 @@ class ResPartner(models.Model):
         checksum = extra + sum((8-i) * int(x) for i, x in enumerate(vat[:7]))
         return 'WABCDEFGHIJKLMNOPQRSTUV'[checksum % 23]
 
+    # TODO: remove in master
     def check_vat_ie(self, vat):
-        """ Temporary Ireland VAT validation to support the new format
-        introduced in January 2013 in Ireland, until upstream is fixed.
-        TODO: remove when fixed upstream"""
-        if len(vat) not in (8, 9) or not vat[2:7].isdigit():
-            return False
-        if len(vat) == 8:
-            # Normalize pre-2013 numbers: final space or 'W' not significant
-            vat += ' '
-        if vat[:7].isdigit():
-            return vat[7] == self._ie_check_char(vat[:7] + vat[8])
-        elif vat[1] in (string.ascii_uppercase + '+*'):
-            # Deprecated format
-            # See http://www.revenue.ie/en/online/third-party-reporting/reporting-payment-details/faqs.html#section3
-            return vat[7] == self._ie_check_char(vat[2:7] + vat[0] + vat[8])
-        return False
+        return stdnum.util.get_cc_module('ie', 'vat').is_valid(vat)
 
     # Mexican VAT verification, contributed by Vauxoo
     # and Panos Christeas <p_christ@hol.gr>
@@ -819,6 +808,10 @@ class ResPartner(models.Model):
         is_valid_vat = stdnum.util.get_cc_module("de", "vat").is_valid
         is_valid_stnr = stdnum.util.get_cc_module("de", "stnr").is_valid
         return is_valid_vat(vat) or is_valid_stnr(vat)
+
+    def check_vat_il(self, vat):
+        check_func = stdnum.util.get_cc_module('il', 'idnr').is_valid
+        return check_func(vat)
 
     def format_vat_sm(self, vat):
         stdnum_vat_format = stdnum.util.get_cc_module('sm', 'vat').compact

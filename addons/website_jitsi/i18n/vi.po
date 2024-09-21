@@ -7,9 +7,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~15.4\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-09 14:06+0000\n"
+"POT-Creation-Date: 2024-02-06 13:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
 "Last-Translator: Martin Trigaux, 2022\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
@@ -55,7 +55,7 @@ msgid "Chat Rooms"
 msgstr "Phòng chat"
 
 #. module: website_jitsi
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_jitsi/static/src/xml/chat_room_modal.xml:0
 #, python-format
 msgid "Close"
@@ -69,7 +69,7 @@ msgstr "Tạo bởi"
 #. module: website_jitsi
 #: model:ir.model.fields,field_description:website_jitsi.field_chat_room__create_date
 msgid "Created on"
-msgstr "Thời điểm tạo"
+msgstr "Tạo vào"
 
 #. module: website_jitsi
 #: model:ir.model.fields,field_description:website_jitsi.field_chat_room__display_name
@@ -89,7 +89,7 @@ msgstr "ID"
 #. module: website_jitsi
 #: model:ir.model.fields,field_description:website_jitsi.field_chat_room__jitsi_server_domain
 msgid "Jitsi Server Domain"
-msgstr "Tên miền máy chủ Jitsi"
+msgstr "Tên miền máy chủ jitsi"
 
 #. module: website_jitsi
 #: model_terms:ir.ui.view,arch_db:website_jitsi.chat_room_join_button
@@ -110,7 +110,7 @@ msgstr "Hoạt động cuối"
 #. module: website_jitsi
 #: model:ir.model.fields,field_description:website_jitsi.field_chat_room____last_update
 msgid "Last Modified on"
-msgstr "Sửa lần cuối"
+msgstr "Sửa lần cuối vào"
 
 #. module: website_jitsi
 #: model:ir.model.fields,field_description:website_jitsi.field_chat_room__write_uid
@@ -120,7 +120,7 @@ msgstr "Cập nhật lần cuối bởi"
 #. module: website_jitsi
 #: model:ir.model.fields,field_description:website_jitsi.field_chat_room__write_date
 msgid "Last Updated on"
-msgstr "Cập nhật lần cuối"
+msgstr "Cập nhật lần cuối vào"
 
 #. module: website_jitsi
 #: model:ir.model.fields,field_description:website_jitsi.field_chat_room_mixin__room_last_activity
@@ -128,7 +128,7 @@ msgid "Last activity"
 msgstr "Hoạt động cuối cùng"
 
 #. module: website_jitsi
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_jitsi/static/src/xml/chat_room_modal.xml:0
 #, python-format
 msgid "Loading your room..."

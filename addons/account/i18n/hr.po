@@ -33,8 +33,10 @@
 # etoimene, 2024
 # Matija Gudlin, 2024
 # Alen Komljen, 2024
-# Gordana Bilas, 2024
 # Vladimir Vrgoč, 2024
+# Kristina Palaš, 2024
+# Luka Carević <luka@uvid.hr>, 2024
+# Gordana Bilas, 2024
 # 
 msgid ""
 msgstr ""
@@ -42,7 +44,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-06 13:31+0000\n"
 "PO-Revision-Date: 2022-09-22 05:44+0000\n"
-"Last-Translator: Vladimir Vrgoč, 2024\n"
+"Last-Translator: Gordana Bilas, 2024\n"
 "Language-Team: Croatian (https://app.transifex.com/odoo/teams/41243/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -599,6 +601,9 @@ msgid ""
 "('name', '!=', '/'), ('posted_before', '=', True), ('quick_edit_mode', '=', "
 "True)]}\">Draft</span>"
 msgstr ""
+"<span attrs=\"{'invisible': ['|', '|', '|', ('state', '!=', 'draft'), "
+"('name', '!=', '/'), ('posted_before', '=', True), ('quick_edit_mode', '=', "
+"True)]}\">Nacrt</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_invoice_send_wizard_form
@@ -6762,7 +6767,7 @@ msgstr ""
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 msgid "Gaps in the sequence"
-msgstr ""
+msgstr "Praznine u sekvenci"
 
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_entries_generate_entries
@@ -9377,6 +9382,12 @@ msgid "Never"
 msgstr "Nikad"
 
 #. module: account
+#: code:addons/account/models/account_tax.py:0
+#, python-format
+msgid "Nested group of taxes are not allowed."
+msgstr ""
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__new_journal_name
 msgid "New Journal Name"
 msgstr "Novi naziv dnevnika"
@@ -11474,7 +11485,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__render_model
 msgid "Rendering Model"
-msgstr ""
+msgstr "Model renderiranja"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_resequence_wizard__ordering__date
@@ -12869,7 +12880,7 @@ msgstr "Prebaci u fakturu/knjižno odobrenje"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_payment_term_line__end_month
 msgid "Switch to end of the month after having added months or days"
-msgstr ""
+msgstr "Prijeđite na kraj mjeseca nakon dodavanja mjeseci ili dana"
 
 #. module: account
 #: model:account.report.column,name:account.generic_tax_report_account_tax_column_tax
@@ -13636,6 +13647,14 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__company_id
 msgid "The company this distribution line belongs to."
 msgstr "Tvrtka kojoj pripada ova distribucija."
+
+#. module: account
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
+"The country of the foreign VAT number could not be detected. Please assign a"
+" country to the fiscal position or set a country group"
+msgstr ""
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id
@@ -15277,7 +15296,7 @@ msgstr "Koristi storno u računovodstvu"
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report__filter_multi_company__tax_units
 msgid "Use Tax Units"
-msgstr ""
+msgstr "Koristite porezne jedinice"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__use_active_domain
@@ -15584,7 +15603,7 @@ msgstr "Upozorenje na računu"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "Warning: this bill might be a duplicate of"
-msgstr ""
+msgstr "Upozorenje: ovaj račun bi mogao biti duplikat"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -16019,6 +16038,14 @@ msgstr ""
 
 #. module: account
 #. odoo-python
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
+"You cannot create a fiscal position with a country outside of the selected "
+"country group."
+msgstr ""
+
+#. module: account
 #: code:addons/account/models/partner.py:0
 #, python-format
 msgid ""
@@ -16576,7 +16603,7 @@ msgstr ""
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_journal_form
 msgid "e.g. Customer Invoices"
-msgstr ""
+msgstr "npr.. Izlazni računi"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_journal_group_form
@@ -16608,12 +16635,15 @@ msgstr "za ovog kupca. Možete označiti ove račune kao plaćene."
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "for this vendor. You can allocate them to mark this bill as paid."
 msgstr ""
+"za ovog dobavljača. Možete ih dodijeliti da označe ovaj račun kao plaćen."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid ""
 "for this vendor. You can allocate them to mark this credit note as paid."
 msgstr ""
+"za ovog dobavljača. Možete ih dodijeliti da označe ovo knjižno odobrenje kao"
+" plaćeno."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_position_form
@@ -16686,12 +16716,12 @@ msgstr "na"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "one of those bills"
-msgstr ""
+msgstr "jednog od tih računa"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "outstanding credits"
-msgstr ""
+msgstr "otvorena potraživanja"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
