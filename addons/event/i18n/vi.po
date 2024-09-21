@@ -1284,8 +1284,8 @@ msgid ""
 "Add a navigation menu to your event web pages with schedule, tracks, a track"
 " proposal form, etc."
 msgstr ""
-"Thêm menu điều hướng vào các trang web sự kiện của bạn với lịch trình, bản "
-"nhạc, mẫu đề xuất theo dõi, v.v."
+"Thêm menu điều hướng vào các trang web sự kiện của bạn với lịch trình, nội "
+"dung, biểu mẫu đề xuất nội dung, v.v."
 
 #. module: event
 #: model_terms:ir.ui.view,arch_db:event.view_event_form
@@ -3153,7 +3153,7 @@ msgstr "Mua sắm, Quản lý Bán &amp; Mua, Kế toán Tài chính."
 #. module: event
 #: model:ir.model.fields,field_description:event.field_res_config_settings__module_website_event_track_quiz
 msgid "Quiz on Tracks"
-msgstr "Đố vui của bài"
+msgstr "Đố vui của nội dung"
 
 #. module: event
 #. odoo-python
@@ -3324,7 +3324,7 @@ msgstr "Quét thẻ để xác nhận sự tham dự"
 #. module: event
 #: model_terms:ir.ui.view,arch_db:event.res_config_settings_view_form
 msgid "Schedule & Tracks"
-msgstr "Lịch trình & bài"
+msgstr "Lịch trình & nội dung"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail__scheduled_date
@@ -3810,7 +3810,7 @@ msgstr "Tổng đăng ký cho sự kiện này"
 #. module: event
 #: model:ir.model.fields,field_description:event.field_res_config_settings__module_website_event_track
 msgid "Tracks and Agenda"
-msgstr "Theo vết và lên chương trình"
+msgstr "Nội dung chương trình"
 
 #. module: event
 #: model:event.type,name:event.event_type_1
