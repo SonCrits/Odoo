@@ -125,7 +125,7 @@ msgstr "Huỷ bỏ"
 #. module: data_recycle
 #: model_terms:ir.ui.view,arch_db:data_recycle.view_data_recycle_record_search
 msgid "Discarded"
-msgstr "Bị loại bỏ"
+msgstr "Đã hủy bỏ"
 
 #. module: data_recycle
 #: model:ir.model.fields,field_description:data_recycle.field_data_recycle_model__display_name
