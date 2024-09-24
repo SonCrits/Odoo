@@ -10243,12 +10243,12 @@ msgid ""
 "are agreements you have with vendors to benefit from a predetermined pricing.\n"
 msgstr ""
 "\n"
-"Mô-đun này cho phép bạn quản lý các thỏa thuận mua hàng của mình.\n"
+"Mô-đun này cho phép bạn quản lý các hợp đồng mua hàng của bạn.\n"
 "===========================================================\n"
 "\n"
-"Quản lý yêu cầu đấu thầu và đơn đặt hàng tổng quát. Yêu cầu đấu thầu được sử dụng để lấy\n"
-"các báo giá cạnh tranh từ các nhà cung cấp khác nhau và chọn những báo giá tốt nhất. Đơn đặt hàng tổng quát\n"
-"là các thỏa thuận bạn có với nhà cung cấp để hưởng lợi từ giá cả được xác định trước.\n"
+"Quản lý thông báo mời thầu và đơn đặt hàng khung. Thông báo mời thầu được sử dụng để nhận\n"
+"các báo giá cạnh tranh từ các nhà cung cấp khác nhau và chọn những báo giá tốt nhất. Đơn đặt hàng khung\n"
+"là các thỏa thuận bạn có với nhà cung cấp để hưởng lợi từ giá được xác định trước.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale_renting_comparison
